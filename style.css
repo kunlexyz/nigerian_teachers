@@ -1,0 +1,619 @@
+body{
+    margin: 0px;
+    padding: 0px;
+	font-family:myFirstFont;
+	
+    -webkit-font-smoothing: antialiased;
+	moz-osx-font-smoothing: grayscale;
+	background:#222;
+	background-image:url("images/Nigerian teachers COVER.jpg");
+	background-size:100%;
+	background-attachment: fixed;
+	background-repeat:no-repeat;
+}
+
+@font-face{
+	font-family:myFirstFont;
+	src:url(./tt0142m_.ttf);
+}
+
+.headic{
+	padding:25px;
+}
+
+.logo, .logo_2{width:  170px;height: 58px;}
+.logo_2{
+	margin-right: 40px;
+	margin-left: 2px;
+}
+
+.M{color:#ca0dec;}
+.tube{color:#F00;}
+
+.sign_in{
+	display: inline-block;
+	background:#F00;
+	color:#FFF;
+	padding:10px;
+	font-weight:bolder;
+	border-radius:5px;
+	font-size: 18px;
+	cursor:pointer;
+}
+
+.containaa{
+	margin:auto;
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    padding: 75px 0;
+    max-width: 950px;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 1;
+    font-size: 1.625rem;
+    font-weight: 400;
+	text-align:center;
+	color:#FFF;
+	max-width:550px;
+	padding-top: 160px;
+}
+
+._3r{
+	width:30%;
+	min-height:120px;
+	margin:5px;
+	display:inline-block;
+	/*border:solid 1px #666;*/
+	background:#fff;
+	/*
+	box-shadow:5px 3px 12px #bbb;
+	*/
+	vertical-align:top;
+}
+
+._3r img{
+	max-width:100%;
+	height:162px;
+}
+@media only screen and (min-width: 501px) and (max-width: 949px), only screen and (min-width: 950px) and (max-width: 1449px), only screen and (min-width: 1450px){
+
+.kap, .row2, .card3{max-width:900px;
+margin:auto;}
+
+
+.c2, .c2x{
+	width:92%;
+	height:31%;
+	margin:auto;
+}
+.c2x{width:88%;
+margin-top:4px;
+}
+.c2box{
+	width:44%;
+	height:43%;
+	margin:4px;
+}
+.c3{
+	width:30%;
+	height:30%;
+}
+.c3box{
+	width:22%;
+	height:22%;
+}
+	
+.c4{
+	width:20%;
+	height:20%;
+	display:inline-block;
+}
+.c4x{
+	width:24%;
+	height:21%;
+	display:inline-block;
+	margin:auto;
+}
+.c4c{
+	margin:4px;
+	vertical-align: top;
+	display:inline;
+    width: 20%;
+    height: 20%;
+}
+
+.bigScreen{
+	max-width:900px;
+	margin:auto;
+}
+.card3{
+	max-width:440px;
+	display:inline-block;
+	}
+}
+.hh1{
+	font-size:3.125rem;
+	color:#fff;position: absolute;
+width: 100%;
+	display: none;width: 100%;text-align: center;
+	margin-top: 27px;
+}
+
+.tx{padding: 16px; float:left;
+border:solid 1px #FFF;
+	border-radius:5px;}
+
+.tx_button{
+	display:inline-block;
+	background:#F00;
+	color:#FFF;
+	padding:15px;
+	font-size:16px;
+	border-radius:5px;
+}
+
+
+/*for browser window that is smaller than 500px,
+*/
+@media only screen and (max-width: 500px) {
+    body {
+        /*background-color: lightblue;*/
+    }
+	.hh1{
+		font-size:35px;
+		color:#fff;padding:35px 0px;
+	}
+	.bc{
+		margin:10px;
+	}
+	.content{
+		padding-bottom:0px;
+	}
+    ._3r {
+		margin:3px;
+    }
+	.tx{max-width:50%;}
+
+.headic{
+	padding:5px;
+}
+.row2{margin:8px 0px;}
+
+
+.c2, .c2x{
+	width:92vw;
+	height:31vw;
+	margin:auto;
+}
+.c2x{width:88vw;
+margin-top:4px;
+}
+.c2box{
+	width:44vw;
+	height:43vw;
+	margin:4px;
+}
+.c3{
+	width:30vw;
+	height:30vw;
+}
+.c3box{
+	width:22vw;
+	height:22vw;
+}
+	
+.c4{
+	width:20vw;
+	height:20vw;
+	display: flex;
+}
+.c4x{
+	width:24vw;
+	height:21vw;
+	display:inline-block;
+	margin:auto;
+}
+.c4c{
+	display:inline-block;
+	margin:4px;
+	vertical-align: top;
+}
+}
+
+@media only screen and (max-width: 330px) {
+	
+	.hh1{
+		font-size:28px;
+	}
+}
+.Hero_card{
+    background: rgba(0,0,0,.8);
+    background-image: -webkit-gradient(linear,left bottom,left top,from(rgba(0,0,0,.8)),color-stop(60%,rgba(0,0,0,0)),to(rgba(0,0,0,.8)));
+    background-image: -webkit-linear-gradient(bottom,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+    background-image: -moz- oldlinear-gradient(bottom,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+    background-image: -o-linear-gradient(bottom,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+    background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+	    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+	z-index:-1;
+}
+
+.bar{
+	min-height:50px;
+	box-sizing:border-box;
+	padding:10px;
+	    font-size: 24px;
+	background:#fff;
+	position:relative;	
+}
+
+.shadow{box-shadow:5px 5px 5px #bbb;}
+.sli_con{
+	overflow:hidden;
+	clear: both;
+}
+.sli{
+	width:405vw;
+	height:200px;
+	background:#FFF;
+	overflow:hidden;
+}
+.slida{
+	width:100vw;
+	height:200px;
+	display:inline-block;
+	text-align:center;
+}
+.sli img{
+	max-width:100%;
+	max-height:200px;
+}
+
+.ce{
+	text-align:center;
+}
+
+
+.headline{
+	border-top:solid 2px #ca0dec;
+}
+
+.headline_child{
+    margin: 10px;
+    margin-left: 0px;
+    margin-top: -10px;
+    float: left;
+    background: #111;
+    padding-right: 10px;
+}
+
+.hc{
+    margin: 20px 0px;
+    margin-left: 10px;
+    color: #ca0dec;
+}
+
+.play{
+	position: absolute;
+    margin-left: -35px;
+    /* margin-top: 27px; */
+    bottom: 0px;
+	    width: 35px;
+}
+.play2{
+	position: absolute;
+	    width: 35px;
+}
+.icon{width:20px;
+	vertical-align:text-top;}
+
+.clist{
+	padding:10px;
+	margin:2px 0px;
+	background:#2aa6f9;
+	color:yellow;
+}
+.exp{
+	float:right;
+}
+.clist_writeup{
+	border-left:solid 2px yellow;
+	padding:0px 5px;
+	font-size:14px;
+	font-weight:100;
+	display:none;
+}
+
+/* Css for Tables */
+
+.subBody{
+	max-width:500px;
+}
+.tdC{
+	max-width:180px;
+	height:60px;
+	margin:5px;
+}
+.subC{
+	font-size:25px;margin:5px;
+	box-shadow:3px 3px 11px #888;
+	background-color:#FFF;
+}
+.subD{
+	margin:2px 0px;
+	display:inline-block;
+	max-width:400px;
+}
+tr{margin:5px;
+	box-shadow:3px 3px 11px #888;
+	background-color:#eee;}
+a{text-decoration:none;
+color:#000;}
+
+/* newer code in mfmtube */
+.kap{
+	width:100%;
+	height:200px;
+	text-align:center;
+}
+.kap2{
+	width:48%;
+	height:100%;
+	margin:auto;
+	display:inline-block;
+}
+.kap2_img{
+	width:96%;
+	height: 96%;
+}
+
+.kap2_child{
+	width:46%;
+	height:46%;
+	display:inline;
+}
+
+/* from mCommerce.css */
+
+.imgFull{
+	width:100%;
+	height:100%;
+}
+.imgFullMax{
+	max-width:100%;
+	max-height:100%;
+}
+.c1{
+	text-align:left;
+	padding:5px;
+}
+
+.card2, .card3{
+  border-radius: 2px;
+  
+  margin: 6px auto;
+  position: relative;
+  vertical-align:text-top;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.12), 0 4px 7px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  overflow:hidden;
+}
+.card2{display: inline-block;}
+
+.red{color:#F00;}
+.redbg{background-color:#F00;}
+.shadow{
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12), 0 4px 7px rgba(0,0,0,0.24);
+}
+.w{color:#FFF;}
+.wBg{background-color:#FFF;}
+
+
+
+#lay_3, #lay_2, .lay{
+	width:100vw;
+	height:100vh;
+	position: fixed;
+	top:0px;
+	display:none;
+}
+#lay_3, #lay_4{
+	background:#ddd;
+	font-size:22px;
+	overflow: auto;
+/*
+display:block;
+*/
+}
+.pCon{
+	margin:auto;
+	margin-top:80px;
+	padding:20px;
+	background:#eee;
+	max-width:350px;
+	text-align:center;
+}
+.pas{
+	font-size:22px;
+	border-radius:8px;
+	border:solid 2px #06dd1e;
+	padding:10px;
+	max-width:90%;
+	margin-top: 5px;
+	background:#fff;
+}
+
+/*
+css code for Pop Out Menu
+*/
+.overlay2{opacity:0.5;
+background-color:#000;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  display:none;
+    top: 0px;}
+
+.overlay-content {
+  position: relative;
+  width: 100%;
+  text-align:left;
+  padding: 45px 0px;
+  background-color:#FFF;
+}
+
+.overlay .menu1 {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #222;
+  display: block;
+  transition: 0.3s;
+}
+.menu1:hover{
+	cursor:pointer;background-color:#DDD;
+}
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.closebtn {
+  position: absolute;
+}
+
+.close3{
+	font-size:30px;
+	cursor:pointer;
+	color:#F60;
+	color:#FFF;
+	line-height: 40px;
+	top:0px;
+	font-weight:bold;
+	border:solid 1px #FF0000;
+}
+
+.bull{
+	padding:4px;
+	background-color:#F60;
+	display:inline-block;
+	vertical-align:middle;
+	margin-right:10px;
+}
+/* @end of Pop Out Menu*/
+.mCon2{position:fixed;
+background-color:#F00; color:#FFF;
+z-index:1;
+top:0px;
+right:0px;
+padding:5px;
+cursor:pointer;
+padding-top:2px;}
+
+
+.menu_dash{
+    padding: 2px;
+    margin: 7px 3px;
+    background-color: #fff;
+    width: 20px;
+}
+/*
+css code for Pop Out Menu
+*/
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  background-color:#14CC04;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.overlay2{opacity:0.5;
+background-color:#000;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  display:none;
+    top: 0px;}
+
+.overlay-content {
+  position: relative;
+  width: 100%;
+  text-align:left;
+  padding: 45px 0px;
+  background-color:#FFF;
+}
+
+.overlay .menu1 {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #222;
+  display: block;
+  transition: 0.3s;
+}
+.menu1:hover{
+	cursor:pointer;background-color:#DDD;
+}
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.closebtn {
+  position: absolute;
+}
+
+.close3{
+	font-size:30px;
+	cursor:pointer;
+	color:#F60;
+	color:#FFF;
+	line-height: 40px;
+	top:0px;
+	font-weight:bold;
+	border:solid 1px #FF0000;
+}
+
+.bull{
+	padding:4px;
+	background-color:#14CC04;
+	display:inline-block;
+	vertical-align:middle;
+	margin-right:10px;
+}
+/* @end of Pop Out Menu*/
+
+
+.btnGreen{
+	border-radius:5px;
+	padding-bottom:8px;
+	display:inline-block;
+	overflow:hidden;
+	cursor:pointer;
+	color:#FFF;
+	background-color:#248808;
+	padding:10px;
+	font-weight:bold
+}
+
+.field{
+	margin: 15px 0px;
+}
+.field td{padding: 7px 0px;}
+.pa {
+    padding: 10px;
+}
+
+.img_one_line{width:100%}
+
+.img_2_line{width: 48%;margin: 10px 0px;}
