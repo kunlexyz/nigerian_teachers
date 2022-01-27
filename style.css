@@ -617,3 +617,20 @@ background-color:#000;
 .img_one_line{width:100%}
 
 .img_2_line{width: 48%;margin: 10px 0px;}
+
+
+@media only screen and (max-width: 420px) {
+	.logo, .logo_2{margin: 0px;width: 100px;
+		height: 35px;
+	}
+	.logo_2{/*float: right;margin-bottom: 5px;*/margin-left:1px;}
+	.hh1{font-size: 28px;}
+}
+
+
+@media only screen and (max-width: 420px) {
+	.hh1{font-size: 28px;
+		padding-top: 25px;
+	}
+	
+}
