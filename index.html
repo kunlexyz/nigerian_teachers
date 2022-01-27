@@ -55,8 +55,8 @@ Password:<br />
 <input type="text" class="pas" onKeyUp="unlocker()" />
 
 	<div class="ce pa">
-<div class="btnRed btnC">Sign In</div>
-<div onClick="bak()" class="btnRed btnC">&larr;Back</div>
+<div class="btnGreen">Sign In</div>
+<div onClick="bak()" class="btnGreen">&larr;Back</div>
 	</div>
 	</div>
 
@@ -441,9 +441,18 @@ Password:<br />
 		
 		<div id="respon"></div>
 		<div class="ce pa">
-		<div class="btnGreen" onClick="sub()">Submit</div>
-		<div onClick="bak2()" class="btnGreen">&larr;Back</div>
+            <input class="btnGreen" type="submit" value="Submit" style="
+            border: none;
+            font-size: 18px;" >
+            
 		
+            <input onClick="bak2()" class="btnGreen" type="button"
+             value="&larr;Back" style="
+            border: none;
+            font-size: 18px;" >
+        <!--
+		<div onClick="bak2()" class="btnGreen">&larr;Back</div>
+		-->
 		</div>
 		
 			
@@ -516,16 +525,17 @@ text-shadow:2px 2px 4px #000000;
        1px 1px 0 #000;">
 Take Lectures Anywhere, Anytime.
 </p>
+<!--
 <p style="font-size:14px;padding: 0px 10px;">
 Ready to watch?
  Click on the icon '<img src="images/play.png" class="icon" />' Next/around the video to play and watch.  
 </p>
-
+-->
 	<div class="bc" style="background:#FFF; text-align:right;
 	border-radius:5px;">
 <input type="text" class="tx" placeholder="Search" />
 
-<div class="tx_button">GET STARTED</div>
+<div class="tx_button">Search</div>
 	</div>
 </div>
 	</div>
