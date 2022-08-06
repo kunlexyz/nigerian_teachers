@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Jamb Load</title>
+
+<link rel="stylesheet" type="text/css" href="temp.css" />
+<link rel="stylesheet" href="MobileTem.css">
+
+<style>
+
+.co{
+  width:100%;
+  height:100vh;
+  overflow:auto;
+  }
+</style>
+</head>
+<body>
+
+<div class="co ce" id="entrance"
+style="top:0px;
+background:rgba(255,255,255,0.4);
+z-index: 102;
+background-repeat: no-repeat;
+background-position: center center;"
+>
+
+  <table height="100%" width="100%">
+    <tr><td valign="middle"
+      style="
+      font-size: 20px;
+      font-weight:bolder;"
+      >
+    
+      
+  Enter your voucher:<br>
+  <input type="text" id="ca" class="pas">
+      
+  <div id="phone_box">
+    Name and Phone Number:<br>
+    <input type="text" id="phone_number" class="pas">
+  </div>
+  <div id="warning" style="color: #f00;background: #fff;"></div>    
+    <div class="ce pa">
+  <div class="btnRed btnC" onclick="send_card()">Send</div>
+  <!--
+  <div onclick="bak()" class="btnRed btnC">←Back</div>
+  -->
+    </div>
+  
+    </td></tr>
+  </table>
+</div>
+
+</body>
+<script type="text/javascript" src="jq.js"></script>
+
+<script>
+
+function send_card(){
+  card = document.getElementById('ca').value;
+	  name = name.replace(/ /g,'_');
+  ph = document.getElementById('phone_number').value;
+	//$.get(serva+"/load/"+card+"/"+ph,
+	
+	$.get("jamb_quiz.php/load/"+card+"/"+ph, function(data, status){
+
+		if(status == 'success'){
+			
+			$('#warning').html(data);
+
+			console.log(data);
+		}else{
+			$('#warning').html('unable to sent<br> Please ceck your internet connection');
+			console.log('error');
+		}
+			
+	});
+}
+</script>
+</html>
