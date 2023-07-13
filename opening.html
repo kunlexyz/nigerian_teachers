@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>truedeal.ca</title>
+    <style>
+    * {
+        font-family: myFont;
+    }
+    @font-face {
+        font-family: myFont;
+        src: url(./tt0142m_.ttf);
+    }
+        .open{
+            max-width: 350px;
+            margin: auto;
+        }
+@media only screen and (max-width: 480px){
+ .open{
+    max-width: 95%;
+ }
+       
+
+}
+    </style>
+</head>
+<body style="background: #ffcb00;color:#888;font-size: 16px;">
+    <div>welcome to <br><span id="tru" style="font-size: 32px;">TRUEDEAL.CA</span></div>
+    
+    <div style="text-align:center;">
+        <img class="open" src="./opening-soon.png" />
+    </div>
+    
+</body>
+<script type="text/javascript">
+    var colo = 1;
+
+    function change_color(){
+        if(colo==1){
+            document.getElementById('tru').style.color='#000';
+            colo=0;
+        }else{
+            document.getElementById('tru').style.color='#009293';
+            colo=1;
+        }
+        setTimeout(change_color,1000);
+    }
+    change_color();
+    
+</script>
+</html>
