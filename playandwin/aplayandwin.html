@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:image" content="images/thinkative.png">
+<title>Quiz</title>
+<link rel="stylesheet" type="text/css" href="testcord3.css" />
+<link rel="stylesheet" type="text/css" href="testcord3x.css" />
+<link rel="stylesheet" type="text/css" href="temp.css" />
+<link rel="stylesheet" href="MobileTem.css">
+<style>
+.slide{
+    width: 100vw;
+    /*height: 100%;*/
+    background: #efeded;
+	box-shadow:1px 1px 5px #333;
+    /*position:fixed;*/
+    left:0px;
+    top:0px;
+	padding:10px;
+	padding-top:44px;
+	z-index:50;
+  display:none;
+  }
+ .button {
+        height: 30px;
+        width: 80px;
+  }
+.bt{
+    width: 70px;
+    height: 50px;
+    padding-top: 20px;
+    background-color: #0C0;
+    color: #fff;
+    border-radius: 50%;
+    font-weight: bolder;
+    font-size: 22px;
+    text-align: center;
+    opacity:0.5;
+    position:absolute;
+    right:0px;
+    bottom:0px;
+	z-index:75;
+}
+.bt2{
+    background:#3694ed;
+    padding:8px;
+    font-size:15px;
+}
+.mvImg{
+	width:100px;
+	opacity:0.8;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.qu{
+  border-bottom: solid 2px #a7a;
+  border-radius: 7px;
+  padding: 10px;
+  padding-top: 4px;
+  text-align:center;
+}
+
+.op{
+  border-radius: 7px;
+  padding: 10px;
+  margin-top: 5px;
+}
+.sq{
+  max-width:100%;
+}
+
+.sco{
+  border:collapse;
+}
+
+@keyframes myfirst
+ {
+ 0% {transform: rotate(0deg);}
+ 40% {transform: rotate(1deg);}
+ 50% {transform: rotate(359deg);}
+ 100% {transform: rotate(0deg);}
+ }
+ 
+ @-webkit-keyframes myfirst /* Safari and Chrome */
+ {
+ 0% {transform: rotate(0deg);}
+ 45% {transform: rotate(1deg);}
+ 48% {transform: rotate(359deg);}
+ 70% {transform: rotate(0deg);}
+ 100% {transform: rotate(0deg);}
+ } 
+ 
+ .rev{
+ animation: myfirst 10s;
+ -webkit-animation: myfirst 10s; /* Safari and Chrome */
+ animation-iteration-count: infinite;
+ animation-delay: 2s;
+ animation-timing-function: ease-in-out;
+ }
+
+@keyframes gentle_roll
+ {
+ 0% {transform: rotate(0deg);}
+ 50% {transform: rotate(359deg);}
+ 100% {transform: rotate(0deg);}
+ }
+ 
+ @-webkit-keyframes gentle_roll /* Safari and Chrome */
+ {
+ 0% {transform: rotate(0deg);}
+ 50% {transform: rotate(359deg);}
+ 100% {transform: rotate(0deg);}
+ }
+ .rolling_stars{
+  animation: gentle_roll 10s;
+ animation-iteration-count: infinite;
+ animation-timing-function: ease-in-out;
+ }
+</style>
+</head>
+<body>
+
+<div id="cover" class="co ce" 
+  style="display:none;
+  z-index:101;
+  background:#fff;
+  ">
+    <div id="nameImg" style="background:#fc7f18;" >
+      <div style="position: absolute;top:125px;width: 100%;text-align: center;">
+        <img class="rev" src="./images/ca ui.png" style="width: 150px;">
+      </div>
+      <img
+      style="max-width:290px;"
+      src="images/ca1.png">
+    </div>
+  <!--
+    <button>Start</button><br>
+    <button>Instructions</button><br>
+-->
+    <div
+    class="bt2"
+    style="
+        letter-spacing:10px;
+        width:150px;
+        margin-top: -9px;
+    " 
+    onclick="start()"
+    >
+      Start
+    </div><br>
+    
+    <div
+    class="bt2"
+    style="margin-top:5px;"
+    >
+      Instructions
+    </div>
+    
+    <p>
+      Sponsored By: <br>
+    </p>
+    <img src="./images/yum.png" style="max-width: 60vw;">
+
+</div>
+  
+<div id="navig8">
+<!-- -->
+<div class="mCon2" onclick="openNav()">
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+            <div class="menu_dash"></div>
+  </div>
+<!-- Pop_Out Menu Codes -->
+<div id="myNav" class="overlay" style="width: 0%;">
+  <div class="closebtn close3" onclick="closeNav()">×</div>
+		<img class="coI" src="./images/quaker.png" style="width:200px; border-radius:25px; margin:auto;">
+  <div class="overlay-content">
+  
+    <a href="./menu.html">
+    <div class="menu1"><div class="bull"></div>Home Page</div>
+    </a>
+    
+    <a href="#">
+    <div class="menu1" onclick=""><div class="bull"></div>About the App</div>
+    </a>
+    
+    <a href="#">
+    <div class="menu1" onclick="showViewTab('more')"><div class="bull"></div>Sponsorers</div>
+    </a>
+    
+    <a href="#">
+    <div class="menu1" onclick=""><div class="bull"></div>Score Board</div>
+    </a>
+    
+    <a href="#">
+    <div class="menu1" onclick=""><div class="bull"></div>Highest Scorers</div>
+    </a>
+    
+    <a href="#">
+		<div class="menu1" onclick="showViewTab('seti')"><div class="bull"></div>Settings</div>
+		</a>    
+    
+    <a href="#">
+    <div class="menu1" onclick=""><div class="bull"></div>Credits</div>
+    </a>
+    
+  </div>
+</div>
+<div class="overlay2" onclick="closeNav()" style="display: none;">
+</div>
+<!-- -->
+</div>
+<!--  -->
+<div id="bar">
+  Math score:
+  <strong id="sco2">0/50</strong>
+ | 
+  card:
+  <div id="c_sco" style="
+    font-size: 18px;
+    padding: 8px;
+    border:solid #900 2px;
+    display: inline-block;
+">0</div>
+</div>
+<div id="timero" style="
+position:fixed;
+right:0px;
+top:0px;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 10px;
+    z-index:102;
+">Time:</div>
+
+<div id="sl" class="slide">
+  <div id="que" class="qu"></div>
+  
+  <div id="" class="op"></div>
+  <div id="" class="op"></div>
+  <div id="" class="op"></div>
+  <div id="" class="op"></div>
+  
+</div>
+
+<div id="sl2" class="slide"
+style="position:fixed;"
+>2222</div>
+
+<table id="sco" style="margin:auto;">
+</table>
+
+<!--
+<div id="play2" class="bt pl" onClick="playPause()" 
+
+    style="opacity:0.5;
+    position:absolute;
+    right:0px;
+    bottom:0px;
+    ">&rang;</div>
+-->
+<div class="co ce" id="entrance"
+style="top:0px;
+  background:rgba(255,255,255,0.8);
+  z-index: 102;
+  background-repeat: no-repeat;
+  background-position: center center;
+"
+>
+  
+  <div style="position: absolute;width: 100%;height: 100vh;z-index: 1;">
+    <img src="./images/galaxy.png" class="rolling_stars" style="max-width: 100%;">
+  </div>
+
+  <table height="100%" width="100%" style="position: relative; z-index: 2;">
+    <tr>
+      <td valign="middle"
+      style="
+      font-size: 20px;
+      vertical-align: middle;
+    "
+      >
+    
+      
+  
+  <div>
+    <img src="./images/galaxy_text.png">
+  </div>
+  <p>
+    You Have won a MTN recharge card
+  </p>
+
+  <h3 style="background-color: #ff0;">09676-63837-973625</h3>
+
+  <div class="ce pa">
+    <div class="btnRed btnC" onclick="continue_()" style="background-color: rgb(20, 157, 255);border:  rgb(20, 157, 255);">Continue</div>
+    <a href="./menu.html">
+      <div onclick="" class="btnRed btnC">Quit &times;</div>
+    </a>
+  </div>
+  
+  <p>
+    Sponsored By: <br>
+  </p>
+    <img src="./images/yum.png" style="max-width: 80vw;">
+      </td>
+    </tr>
+  </table>
+  <div style="display: none;">
+    Enter your <br>
+    Name &amp; Surname:<br>
+    <input type="text" id="na" class="pas"  value="test name">
+        
+    <div id="phone_box">
+      Phone Number:<br>
+      <input type="text" id="phone_number" class="pas" value="080TEST1234">
+    </div>
+    <div id="warning" style="color: #f00;background: #fff;"></div>    
+      <div class="ce pa">
+        <div class="btnRed btnC" onclick="start()">Enter</div>
+        <div onclick="bak()" class="btnRed btnC">←Back</div>
+      </div>
+  </div>
+</div>
+<!-- 
+  # Crystal Animation Landing Page
+
+Welcome to Crystal Animation, your one-stop destination for top-quality printing and branding services to elevate your business or product.
+
+## Our Services
+
+### Printing Services
+
+We specialize in delivering premium printing services tailored to your unique requirements. From business cards to flyers, banners to brochures, we ensure every piece represents your brand with excellence.
+
+### Branding Services
+
+Our expert team is dedicated to crafting compelling branding solutions that stand out in today's competitive market. Whether you're looking to refresh your brand identity or create a new one from scratch, we've got you covered.
+
+## Why Choose Crystal Animation?
+
+With a focus on creativity, quality, and exceptional customer service, we go above and beyond to bring your vision to life. Trust us to deliver unmatched results that exceed your expectations.
+
+## Testimonials
+
+"Crystal Animation transformed our brand with their exceptional branding services. Our business has never looked better!" - Sarah M.
+
+"Professional, reliable, and talented - Crystal Animation is the go-to for all our printing needs." - John D.
+
+## Contact Us
+
+Ready to take your business to the next level with our printing and branding services? Contact us today to get started.
+
+Transform your business with Crystal Animation. Embrace creativity, quality, and success.
+
+-----------------------------------
+NIGERIAN CURRENT AFFAIRS QUESTIONS AND ANSWERS
+Who is Nigeria's first female author? Flora Nwapa
+Who is the first Nigerian female Vice-Chancellor? Prof. Grace Alele Williams
+Who founded Nigeria's first political party? Herbert Macaulay
+Federal Capital Territory, Abuja is in what geopolitical zone? North Central
+Which is the Nigerian State with the largest land mass? Niger
+Which is the Nigerian State with the greatest number of local government areas? Kano(44 LGAs)
+Which is the Nigerian state with the highest population? Kano State
+Which Nigerian state has "Light of the Nation" as her slogan? Anambra State
+What is the slogan of Lagos State? Centre of Excellence
+What is the slogan of Rivers State? Treasure Base of the Nation
+What is the capital of Osun State? Osogbo
+What is the slogan of Kano State? Centre of Commerce
+What is the capital of Yobe State? Damaturu
+What is the capital of Zamfara State? Gusau
+What is the capital of Niger State? Minna
+Who is the first Nigerian nationalist to move the motion of self government? Pa Anthony Enahoro
+What is the highest mountain in the world? Mount Everest
+What is the highest mountain in Africa? Mount Kilimanjaro
+Who is the first governor of the defunct Eastern Region? Francis Akanu Ibiam
+Which African country has the highest mountain in Africa? Tanzania
+What is the name of South African currency? Rand
+What is the name of Ghanaian currency? Cedi
+What is the name of Nigerian currency? Naira
+Ibibio ethnic group is predominantly found in which state? Akwa Ibom State
+Nupe Ethic group is predominantly found in which state? Niger State
+What is the minority group in Anambra state? Igala
+Which state in Nigeria is famous for blacksmith works? Anambra state
+It is the main duty of the --------- to maintain law and order? Police
+Government of the people by the people and for the people is called? Democracy
+Which country is the largest petroleum producer in Nigeria? Nigeria
+Where is the headquarters of the African Union? Addis Ababa, Ethiopia
+Where is the headquarters of ECOWAS? Abuja, Nigeria
+Where is the headquarters of the United Nations? New York, USA
+What town in Nigeria is famous for plywood production? Sapele
+Which country first won the world cup? Uruguay
+What is the capital of Russia? Moscow
+How many states are in Northern Nigeria? 19
+How many states are in southern Nigeria? 17
+Who is the African slave boy that later became a bishop? Samuel Ajayi Crowther
+When was naira and kobo introduced in Nigeria? 1973
+When was ECOWAS founded? 1975
+Ajaokuta is famous for? Iron and Steel
+What are the three arms of government in Nigeria? Executive, Judiciary and Legislative
+Which university is the oldest in Nigeria? University of Ibadan( founded in 1948)
+Who is the first Inspector-General of Police? Louis Edet
+Who is the first military head of state to die in office? General J.T.U Aguiyi Ironsi
+Which state in Nigeria has the least number of local government areas? Bayelsa state( 8 LGAs)
+Which state in Nigeria has Food Basket of the Nation as her slogan? Benue State
+How many states are in Nigeria? 36
+Which political party is the ruling party in Nigeria? All Progressive Congress (APC)
+Which country won the hosting rights of the 2019 African Cup Of Nations? Egypt
+What is the first political party in Nigeria? Nigerian National Democratic Party
+When was the Nigerian first political party formed? 1923
+Nigeria was first visited by the white men from which country? Portugal
+Who is the first executive president of Nigeria? Alhaji Shehu Shagari
+Who is the first president of Nigeria? Dr. Nnamdi Azikwe
+Who is the first Military Head Of State of Nigeria? Aguiyi Ironsi
+What is the ruling political party in Delta State? Peoples Democratic Party (PDP)
+Which year did Nigeria gain her independence? 1960
+Which year did Nigeria become a republic? 1963
+Who amalgamated the Northern and Southern protectorates of Nigeria? Sir Lord Lugard
+When was Nigeria amalgamated? 1914
+Who named Nigeria? Flora Shaw Lugard
+When was Nigeria's second republic? 1979-1983
+Who moved the first historic motion for Nigeria's independence? Pa Anthony Enahoro
+When was the first unsuccessful motion for Nigeria's independence moved? 1953
+Nigeria is intersected by which two major Rivers? River Niger and River Benue
+What are the colours of the Nigerian flag? Green and white
+Who is the first governor general of colonial Nigeria? Sir Lord Lugard
+Where is the name Nigeria derived from? River Niger
+What is the total number of local government areas in Nigeria? 774
+What is the name of the person that designed the Nigerian flag? Micheal Taiwo Akinkumi
+Who is the composer of Nigerian new national anthem? Benefit Odiase
+What is the motor of Nigeria? Unity & Faith, Peace an Progress
+What is the significance of colour green in the Nigerian flag? Agriculture
+What is the significance of the white in Nigerian flag? Peace
+What is Nigeria's legal tender? Naira
+When did Nigeria change from right hand to left hand drive? 2nd April 1972
+What is the most populated black nation in the world? Nigeria
+How many geo-political zones are in Nigeria? 6
+What are the two major religions in Nigeria? Christianity and Islam
+Where is the commercial capital of Nigeria? Lagos
+Where is the present capital of Nigeria? Abuja
+How many senatorial districts are in Nigeria? 109
+How many federal constituencies are in Nigeria? 360
+Who is the head of Islam in Nigeria? Sultan of Sokoto
+Who discovered river Niger? Mongo Park
+Where is the first capital of Nigeria? Calabar
+Who is the first Nigerian Military Head Of State to hand over to a democratically elected president? General Olusegun Obasanjo (1979)
+Who is the first military Head Of State to overthrow a civilian president in Nigeria? Major General Aguiyi Ironsi
+Which Nigerian Military Head Of State overthrew a democratically elected government in 1983? Major General Muhammadu Buhari
+Who is the first and only prime minister of Nigeria? Sir Abubakar Tafawa Balewa
+Who is the first indigenous lawyer in Nigeria? Chief Sapara Williams
+Who is the fist indigenous solicitor in Nigeria? Chief Rotimi Williams
+Who is the first indigenous chartered accountant in Nigeria? Chief Akintola Williams
+Who is the first indigenous medical doctor in Nigeria? Prof. Eyitayo Lambo
+Who is the first indigenous Vice Chancellor in Nigeria? Prof. Kenneth Dike
+Who is the first Nigerian Navy Commodore? Joseph Edet Akinwale
+Who is the first indigenous governor of central bank? Mallam Aliyu Bornu
+Who is the first female governor in Nigeria? Dame Virgy Etiaba
+Who is the first female speaker of the Federal House of Representatives? Mrs Patricia Ette
+Who is the first female elected senator in Nigeria? Senator Franca Afegbua
+Who is the first female permanent secretary in Nigeria? Francisca Yetunde E
+Who is the first female Chief Justice of Nigeria? Mariam Aloma Mukhtar
+Who is the first female pilot in Nigeria? Chinyere Onyemauche
+Who is the first Nigerian Senate President? Dr. Nnamdi Azikwe
+What are the three tiers of government in Nigeria? Federal, State and Local Governments
+What continent is Nigeria located? Africa
+Who stopped the killing of twins in Nigeria? Mary Slessor
+When was Aba women riot? 1929
+Who is the first black president of South Africa? Dr. Nelson Mandela
+Who is the first African American president of the United States of America? Barack Hussein Obama
+When was ECOWAS founded? 1975
+What is the law making body of the civilian government called? Legislature
+What is the person who represents the interest of his or her country abroad abroad called? Ambassador
+What is the official language of Nigeria? English
+What is the name of the government organization that maintains law and order in Nigeria? Police
+What is the significance of the Eagle in the Nigerian Coat of Arm? Strength
+What is the significance of the Horse in the Nigerian Coat of Arm? Dignity and Pride
+The most populated country in the world? China
+The most populated continent in the world? Asia
+Sao Tome and Principe is a country in which continent? Africa
+Who was the Labour Party Presidential Candidate in the 2023 general elections? Peter Obi
+Who is the current president of Nigeria? Bola Ahmed Tinubu
+Who is the current senate president of Nigeria? Godswill Obot Akpabio
+Who is the current CBN governor? Yemi Cardodo
+Who is the current minister of finance? Wale Edun
+Portraits On The Naira Notes
+5 naira - Sir Tafawa Balewa
+10 naira - Dr. Alvan Ikuku
+20 naira - Gen. Murtala Muhammed
+50 naira - Three major ethnic groups
+100 naira - Chief Obafemi Awolowo
+200 naira - Sir Ahmadu Bello
+500 naira - Dr Nnamdi Azikwe
+1000 naira - Alhaji Aliu Mai Bornu and Dr. Clement Isong.
+ -->
+</body>
+<script type="text/javascript" src="jq.js"></script>
+
+<script type="text/javascript" src="aplayandwin.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(e) {
+	var wh = window.innerHeight;
+	$('.slide').css({
+	  display:'block'/*,
+	  height:(window.innerHeight - document.getElementById('bar').clientHeight-23)+'px'*/,width:(window.innerWidth-20)+'px'});    
+    //time();
+	$('#cover').css({display:'block'});
+	//$('#bar').css({width:window.innerWidth+'px'});
+});
+//random generator
+
+var random, rAN = [];
+function myFunction()
+{
+    array_ = [];
+
+    for (i=0; i < q.length; i++ ) {
+        array_.push(i);
+    }
+
+    random, rAN = [];
+
+    for (a = array_, i = a.length; i--; ) {
+        random = a.splice(Math.floor(Math.random() * (i + 1)), 1)[0];
+        rAN.push(random);
+    }
+    //console.log(rAN);
+}
+myFunction();
+//Timero
+var ktime=5; fin=61 - ktime;
+if(!namo){var namo="User";}
+namo.toUpperCase()
+function time(){
+	ktime--;
+	document.getElementById('timero').innerHTML='time: '+ktime;
+	if(ktime==0){next();ktime=5;}
+	//setTimeout("time()",1000);
+  
+	if(last_question=='on'){
+		setTimeout(time,1000);
+	}
+}		/*
+function kxtime(){ttim=setInterval("time()",1000);}
+function stopkxtime(){clearInterval(ttim);
+		fin = 61 - ktime;}
+
+        ..........from Dazzling Craft ........
+function myFunction()
+{
+var array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 10];
+var random, result = [];
+
+for (a = array, i = a.length; i--; ) {
+random = a.splice(Math.floor(Math.random() * (i + 1)), 1)[0];
+result.push(random);
+}
+// now we got our expected result into an array named "result" // we can do whatever we want with it.
+
+document.getElementById("demo").innerHTML=result;
+	//fill boxes
+	document.getElementById('main').innerHTML=(q+1)+'.)<br />'+que[rAN[q]][0];
+	document.getElementById('opa').innerHTML=que[rAN[q]][1];
+	document.getElementById('opb').innerHTML=que[rAN[q]][2];
+	document.getElementById('opc').innerHTML=que[rAN[q]][3];
+	document.getElementById('opd').innerHTML=que[rAN[q]][4];
+		*/
+//Timero		
+var n = 0;mk=0;
+function fil(n){
+var txt = '\
+  <div id="que" class="qu">\
+  <div class="cir">'+(n+1)+'</div><br>\
+  '+q[rAN[n]][0]+'</div>\
+  \
+  <div onclick="opBtn(\'A\')" id="" class="op"><img src="image/Ax.png" class="imageOpt">'+q[rAN[rAN[n]]][1]+'</div>\
+  <div onclick="opBtn(\'B\')" id="" class="op"><img src="image/Bx.png" class="imageOpt">'+q[rAN[n]][2]+'</div>\
+  <div onclick="opBtn(\'C\')"  id="" class="op"><img src="image/Cx.png" class="imageOpt">\
+'+q[rAN[n]][3]+'\
+  </div>\
+  <div onclick="opBtn(D)" id="" class="op"><img src="image/Dx.png" class="imageOpt">\
+  '+q[rAN[n]][4]+'\
+  </div>';
+  return txt;
+}
+function next(){
+	ktime =ktime+5;
+	$('#c_sco').html(c_sc);
+
+  $('#sl').html(fil((n)));
+  $('#sl2').html(fil(n));
+  $('#sl2').css({left:0+'px'});
+  $('#sl2').animate({left:(-innerWidth-20)+'px'});
+  //setTimeout(function(){
+  //mva('.qu:eq(0)',200);
+  mva('.op:eq(0)',300);
+  mva('.op:eq(1)',500);
+
+  mva('.op:eq(2)',700);
+  mva('.op:eq(3)',800);
+  //},500);
+  n++;
+  if(n==q.length-1){
+    n=0;
+  }
+}
+function continue_(){
+			$('#entrance').slideUp();
+			last_question='on';
+			document.getElementById('sl').style.display='block';
+			document.getElementById('sl2').style.display='block';
+      c_sc=0;
+      time();
+    }
+
+function mva(a,b)
+{ 
+  $(a).css({'margin-left':(innerWidth-2)+'px'})
+
+  $(a).animate({'margin-left':-10+'px'},b);
+  $(a).animate({'margin-left':0+'px'},b);
+  
+}
+
+function moveSli2(){
+  $('#sl2').animate({left:(-innerWidth-2)+'px'});
+  
+}
+/*
+//questions
+q=[
+  [
+   'qqq111',
+   'aaa111',
+   'bbb111',
+   'ccc111',
+   'ddd111'
+    ],
+  [
+  'qqq222',
+   'aaa222',
+   'bbb222',
+   'ccc222',
+   'ddd222'
+    ],
+  [
+  'qqq333',
+   'aaa333',
+   'bbb333',
+   'ccc333',
+   'ddd333'
+    ],
+]
+*/
+
+var old='';oldx='';
+function openNav() {
+  document.getElementById("myNav").style.width = "75%";
+  document.getElementsByClassName('overlay2')[0].style.display='block';
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+  document.getElementsByClassName('overlay2')[0].style.display='none';
+}
+
+var intro = function(){
+        $("#intro").slideUp(3000);
+	}
+
+function rd(){
+	return Math.floor(Math.random()*(window.innerWidth-50));
+}
+function rd2(){
+	return (Math.floor(Math.random()*10)+1)*1000;
+}
+function rd3(){
+	return (Math.floor(Math.random()*3)+1);
+}
+
+var ani='on';sc=0;name=0;Phone='';
+function bmove(x,y,z){
+	var im = '<img id="i'+z+'" src="images/confetti_'+rd3()+'.png" class="mvImg">';
+	//document.body.append(im);
+	$('#sl').after(im);
+	console.log(y);
+	$('#i'+z+'').css({left:(x+'px'),top:(window.innerHeight+120)+'px'},3000);
+	$('#i'+z+'').animate({top:-150+'px'},y,function(){
+	  $('#i'+z).remove();
+	  if(ani=='on'){
+	   bmove(rd(),rd2(),z);
+	  }
+	});
+	/*
+	$('.mvImg:eq(1)').css({left:(x+'px'),top:(window.innerWidth+120)+'px'},3000);
+	$('.mvImg:eq(1)').animate({top:-70+'px'},y,function(){bmove(rd(),rd2())});
+	*/
+}	
+
+//animation background
+
+im='';
+for(i=0;i<5;i++){
+	//im += '<img src="images/ic_6.png" class="mvImg">';
+
+bmove(rd(),rd2(),i);
+}
+	//$('#sl').after(im);
+	
+
+function start(){
+	last_question='on';
+  name = document.getElementById('na').value;
+  ph = document.getElementById('phone_number').value;
+  msg = '';
+  n=0;mk=0;
+  if(name.length<3){
+    msg ="<i><strong>Your name cannot be less than 3 letter word. <br>Enter your name and surname </strong></i>";
+    document.getElementById('warning').innerHTML=msg;
+    return;
+  }else{
+	  name = name.replace(/ /g,'_');
+  }
+  if(ph.length<11){
+    msg ="<i><strong>Your phone cannot be less than 11. <br>Enter a correct phone number to get a recharge card when you win </strong></i>";
+    document.getElementById('warning').innerHTML=msg;
+    return;
+  }
+  
+	//$('.slide').css({display:'block'});
+	$('#sp').css({display:'block'});
+	
+  ani='off';n=0;
+	$('#cover').css({display:'none'});
+	next();
+	ktime=5;
+	sc=0;
+	time();
+}
+
+function send_sco(a,b,c){
+  $.get(serva+"/jambQuiz/"+sc+"/"+name+"/"+p3+"/"+p4+"/"+p5, function(data, status){
+
+    //alert("Data: " + data + "\nStatus:
+    
+	});
+}
+</script>
+</html>

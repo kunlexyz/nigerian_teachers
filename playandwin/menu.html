@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Win recharge cards</title>
+    <link rel="stylesheet" type="text/css" href="testcord3.css" />
+    <link rel="stylesheet" type="text/css" href="testcord3x.css" />
+    <link rel="stylesheet" type="text/css" href="temp.css" />
+    <link rel="stylesheet" href="MobileTem.css">
+    <style>
+        body{
+            background-color: #fff;
+        }
+        .ww{
+            max-width: 150px;
+            max-height: 200px;
+            margin: 0 10px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+<div id="navig8">
+        <!-- -->
+        <div class="mCon2" onclick="openNav()">
+                    <div class="menu_dash"></div>
+                    <div class="menu_dash"></div>
+                    <div class="menu_dash"></div>
+        </div>
+        <!-- Pop_Out Menu Codes -->
+        <div id="myNav" class="overlay" style="width: 0%;">
+          <div class="closebtn close3" onclick="closeNav()">×</div>
+                <img class="coI" src="./images/yum.png" style="width:200px; border-radius:25px; margin:auto;">
+          <div class="overlay-content">
+          
+            
+            <div class="menu1" onclick="home()"><div class="bull"></div>Home Page</div>
+            
+            
+            <a href="#">
+            <div class="menu1" onclick=""><div class="bull"></div>About the App</div>
+            </a>
+            
+            <a href="#">
+            <div class="menu1" onclick="showViewTab('more')"><div class="bull"></div>Sponsorers</div>
+            </a>
+            
+            <a href="#">
+            <div class="menu1" onclick=""><div class="bull"></div>Score Board</div>
+            </a>
+            
+            <a href="#">
+            <div class="menu1" onclick=""><div class="bull"></div>Highest Scorers</div>
+            </a>
+            
+            <a href="#">
+                <div class="menu1" onclick="showViewTab('seti')"><div class="bull"></div>Settings</div>
+                </a>    
+            
+            <a href="#">
+            <div class="menu1" onclick=""><div class="bull"></div>Credits</div>
+            </a>
+            
+          </div>
+        </div>
+        <div class="overlay2" onclick="closeNav()" style="display: none;">
+        </div>
+        <!-- -->
+</div>
+
+<div id="cover" class="co ce" style="display: block;">
+    <div
+    style="font-size: 90px;margin-top: 30px;"
+    >
+        WIN
+    </div>
+    <div style="color: #0773d1;font-size: 35px;margin-top: -30px;">Recharge Cards</div>
+    <div>By selecting the right answers</div>
+<!-- 
+    <h2>Win Recharge Cards</h2>
+    <p style="margin-top: -10px;">By selecting the right answers</p>
+-->
+
+
+    <div class="bt2" style="
+        width:150px;
+        font-size: 25px;
+        margin: 30px 0;
+    " onclick="menu()">
+      Menu
+    </div>
+
+    <h3>Our Sponsorers</h3>
+    <div id="myDIV" style="overflow:hidden;
+    height:350px;
+    position:relative;
+
+    ">
+    <div id="sleed" style="width: 400%;">
+    <div style="display: inline-block;">
+        <img class="ww" src="./images/quaker.png" alt="quaker">
+        <img class="ww" src="./images/yum.png" alt="yumyum">
+        <img class="ww" src="./images/bio_logo.png" alt="youngbrain">
+        <img class="ww" src="./images/oxbrandplanetlogo.png" alt="oxbrandplanet">
+        <img class="ww" src="./images/quaker.png" alt="quaker">
+        <img class="ww" src="./images/yum.png" alt="yumyum">
+        <img class="ww" src="./images/bio_logo.png" alt="youngbrain">
+        <img class="ww" src="./images/yum.png" alt="yumyum">
+        <img class="ww" src="./images/oxbrandplanetlogo.png" alt="oxbrandplanet">
+    </div>
+    </div>
+    </div>
+    
+</div>
+
+
+<div id="the_tray" class="co ce" style="background-color: #ddd;">
+    <div
+      style="
+        padding: 8px;
+        background-color:#0773d1;
+        color: #fff;
+        font-size: 24px;
+      "
+    >
+        Contents
+    </div>
+
+    <div id="tray_in" style="margin-top:10px;">
+
+        <div class="_3r">                 
+            <div class="_in">
+                Current Affairs
+            </div>
+            <img src="./images/play.png" alt="play_button"  >
+        </div>
+
+        <div class="_3r">        
+            <div class="_in">
+                General Studies
+            </div>
+            <img src="./images/play.png" alt="play_button"  >
+        </div>
+        <div class="_3r">
+            <div class="_in">
+                Math
+            </div>
+            <img src="./images/play.png" alt="play_button"  >
+        </div>
+    </div>
+
+</div>
+
+<div id="c_soon" class="co ce">
+    
+  <table height="100%" width="100%" style="position: relative; z-index: 2;">
+    <tr>
+      <td valign="middle"
+      style="
+      vertical-align: middle;
+    "
+      >
+    <div style="font-size: 70px;margin-top: -90px;">
+        ComiNg <br>
+        SoOn
+    </div>
+
+    <div onclick="bak2()" 
+     style="padding: 25px;color: #fff;
+      background-color: #0773d1;
+      border-radius: 50%;
+      display: inline-block;
+     "
+    >
+        ←Back
+    </div>
+
+    </td>
+    </tr>
+    </table>
+</div>
+
+</body>
+<script src="./scripts/scroll.js"></script>
+<script src="./jq.js"></script>
+<script type="text/javascript">
+
+var pages = [
+    ['Current<br>Affairs','current_affair.html'],
+    ['General Studies','','g_s.html'],
+    ['Mathematics','aplayandwin.html'],
+    ['Sport Quiz',''],
+    ['Entertainment',''],
+    ['Government',''],
+    ['English',''],
+    ['Science',''],
+    ['Econs',''],
+    ['History',''],
+    ['Social<br>Studies','']
+];
+p_c='';
+function fila(a,b){
+    if(b==''){
+        var boxa =`
+            <div onclick="coming_soon()" class="_3r">        
+                <div class="_in">
+                    ${a}
+                </div>
+                <img src="./images/play.png" alt="play_button"  >
+            </div>
+        `;
+    }else{
+        var boxa =`
+        <a href='./${b}'>
+            <div class="_3r">        
+                <div class="_in">
+                    ${a}
+                </div>
+                <img src="./images/play.png" alt="play_button"  >
+            </div>
+        </a>`;
+    }
+    return boxa;
+}
+//pages.forEach()
+for(var i=0;i<pages.length;i++){
+    //console.log(i);
+    p_c =p_c+ fila(pages[i][0],pages[i][1]);
+}
+document.getElementById('tray_in').innerHTML=p_c;
+
+var old='';oldx='';
+function openNav() {
+  document.getElementById("myNav").style.width = "75%";
+  document.getElementsByClassName('overlay2')[0].style.display='block';
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+  document.getElementsByClassName('overlay2')[0].style.display='none';
+}
+
+function menu(){
+    $('#the_tray').slideDown(1000);
+    $('#cover').slideUp(1000);
+    closeNav();
+}
+function home(){
+    $('#cover').slideDown(1000);
+    $('#the_tray').slideUp(1000);
+    closeNav();
+}
+function coming_soon(){
+    $('#c_soon').slideDown(1000);
+    $('#the_tray').slideUp(1000); 
+}
+function bak2(){
+    $('#the_tray').slideDown(1000);
+    $('#c_soon').slideUp(1000);    
+}
+</script>
+</html>
