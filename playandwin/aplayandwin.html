@@ -533,13 +533,13 @@ function myFunction()
 }
 myFunction();
 //Timero
-var ktime=5; fin=61 - ktime;
+var ktime=20; fin=61 - ktime;
 if(!namo){var namo="User";}
 namo.toUpperCase()
 function time(){
 	ktime--;
 	document.getElementById('timero').innerHTML='time: '+ktime;
-	if(ktime==0){next();ktime=5;}
+	if(ktime==0){next();ktime=20;}
 	//setTimeout("time()",1000);
   
 	if(last_question=='on'){
@@ -738,7 +738,7 @@ function start(){
   ani='off';n=0;
 	$('#cover').css({display:'none'});
 	next();
-	ktime=5;
+	ktime=20;
 	sc=0;
 	time();
 }
