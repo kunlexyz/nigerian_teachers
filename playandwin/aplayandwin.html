@@ -533,13 +533,13 @@ function myFunction()
 }
 myFunction();
 //Timero
-var ktime=20; fin=61 - ktime;
+var ktime=25; fin=61 - ktime;
 if(!namo){var namo="User";}
 namo.toUpperCase()
 function time(){
 	ktime--;
 	document.getElementById('timero').innerHTML='time: '+ktime;
-	if(ktime==0){next();ktime=20;}
+	if(ktime==0){next();}
 	//setTimeout("time()",1000);
   
 	if(last_question=='on'){
@@ -578,7 +578,8 @@ var txt = '\
   <div class="cir">'+(n+1)+'</div><br>\
   '+q[rAN[n]][0]+'</div>\
   \
-  <div onclick="opBtn(\'A\')" id="" class="op"><img src="image/Ax.png" class="imageOpt">'+q[rAN[rAN[n]]][1]+'</div>\
+  <div onclick="opBtn(\'A\')" id="" class="op"><img src="image/Ax.png" class="imageOpt">'
+    +q[rAN[n]][1]+'</div>\
   <div onclick="opBtn(\'B\')" id="" class="op"><img src="image/Bx.png" class="imageOpt">'+q[rAN[n]][2]+'</div>\
   <div onclick="opBtn(\'C\')"  id="" class="op"><img src="image/Cx.png" class="imageOpt">\
 '+q[rAN[n]][3]+'\
@@ -589,10 +590,10 @@ var txt = '\
   return txt;
 }
 function next(){
-	ktime =ktime+5;
+	ktime =25;
 	$('#c_sco').html(c_sc);
 
-  $('#sl').html(fil((n)));
+  $('#sl').html(fil(n));
   $('#sl2').html(fil(n));
   $('#sl2').css({left:0+'px'});
   $('#sl2').animate({left:(-innerWidth-20)+'px'});
@@ -605,7 +606,7 @@ function next(){
   mva('.op:eq(3)',800);
   //},500);
   n++;
-  if(n==q.length-1){
+  if(n==q.length){
     n=0;
   }
 }
@@ -738,7 +739,6 @@ function start(){
   ani='off';n=0;
 	$('#cover').css({display:'none'});
 	next();
-	ktime=20;
 	sc=0;
 	time();
 }

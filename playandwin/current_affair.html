@@ -539,7 +539,7 @@ namo.toUpperCase()
 function time(){
 	ktime--;
 	document.getElementById('timero').innerHTML='time: '+ktime;
-	if(ktime==0){next();ktime=20;}
+	if(ktime==0){next();}
 	//setTimeout("time()",1000);
   
 	if(last_question=='on'){
@@ -590,7 +590,7 @@ var txt = '\
   return txt;
 }
 function next(){
-	ktime =ktime+5;
+	ktime =25;
 	$('#c_sco').html(c_sc);
 
   $('#sl').html(fil(n));
@@ -739,7 +739,6 @@ function start(){
   ani='off';n=0;
 	$('#cover').css({display:'none'});
 	next();
-	ktime=20;
 	sc=0;
 	time();
 }
