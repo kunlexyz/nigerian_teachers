@@ -1,0 +1,101 @@
+
+@font-face {
+    font-family: calib;
+    src: url(./trebuc.ttf);
+}
+body{
+    margin: 0px;
+    background: #e3e1e1;
+}
+#sleed{
+    overflow: hidden;
+}
+#sleed img{
+    height: 350px;
+}
+
+.heading_topic {
+    border-left: solid 6px #99f;
+    background: #eef;
+    padding: 10px;
+    padding-left: 40px;
+    font-family: calib;
+    color:blue;
+}
+.about_story p {
+    font-family: calib;
+    font-size: 16px;
+    text-align: justify;
+}
+.about_story li{
+    display:list-item;
+    color: #000;
+}
+.about_story li:hover{
+    background: #fff;
+    color: #000;
+    border-bottom: #aaa solid 2px;
+}
+.about_img, .about_img_2{
+    float:right;
+    width: 335px;
+    margin: 20px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+.about_img_2{
+    margin-top: 0px;
+}
+#about_{
+    font-size: 70px;
+    width:100%;
+    position:absolute;
+    top:150px;
+    color:#fff;
+}
+#major_con, .major_con{
+    padding: 30px 10px;
+    max-width: 900px;
+    margin: auto;
+    margin-top: -70px;
+}
+
+@media only screen and (max-width: 480px){
+    #about{
+        font-size: 40px;
+        width:100%;
+        position:absolute;
+        top:150px;
+        color:#fff;
+    }
+    #major_con{
+        padding: 10px 15px;
+        max-width: 900px;
+        margin: auto;
+    }
+    .about_img, .about_img_2{
+        float:right;
+        width: 335px;
+        margin: 0px;
+        margin-right: 0px;
+        margin-bottom: 5px;
+    }
+    
+
+}
+@media only screen and (min-width: 481px) and (max-width: 950px){  
+    
+    #about{top:190px;}
+    .mind_big {
+        max-width: 700px;
+        margin: 20px auto;
+    }
+    #major_con {
+        padding: 30px 15px;
+        max-width: 700px;
+        margin: auto;
+    }
+}
+@media only screen and (min-width: 951px){
+
+}
