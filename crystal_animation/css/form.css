@@ -1,0 +1,63 @@
+._3bx{
+	max-width: 33%;
+	min-width: 31%;
+	box-sizing: border-box;
+	display: inline-block;
+	padding: 8px 0px;
+	color: #999;
+}
+.small_text{
+	font-size: 14px;
+}
+.donate_cir{
+	border-radius: 6px;width: 12px;height: 12px;margin: auto 6px;
+	background: #e3e0e0;
+	display: inline-block;
+}
+.btn_green{
+	display: inline-block;
+	padding: 15px 50px;
+	font-size: 30px;
+	background: #2ac77a;
+	color: #fff;
+	border-radius:8px;
+	font-family: myFont;
+	width:160px;
+	height:66px;
+	box-sizing: border-box;
+	margin: 4px 2px;
+	vertical-align: top;
+}
+.btn_green:hover{background: #20fc2b;}
+.btn_green_re{
+	border: 2px solid #2ac77a;
+	background: #f7f7f7;
+	color: #111;
+}
+.sup_dola{font-size: 15px;
+	font-family: myFont;
+}
+.form_footer{
+	background: #e4e5e7;
+	color: #999;padding: 20px;font-size: 12px;font-weight: 500;
+}
+.field{
+	border: solid 2px #aaa;width:44%;
+	border-radius:5px;font-size:20px;
+	padding: 10px;
+}
+#don{
+	text-align: left;
+	line-height: 200%;
+	padding: 20px;
+}
+.valu{
+	color: #2ac77a;
+	font-weight: 800;
+	float: right;
+}
+.form_con{
+	/* position: absolute; */
+	background: #fff;
+	display: none;
+}

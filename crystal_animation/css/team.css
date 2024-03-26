@@ -1,0 +1,79 @@
+*{font-family: calib;}
+@font-face {
+    font-family: calib;
+    src: url(./trebuc.ttf);
+}
+.line{
+    padding: 2px;
+    background: blue;
+    background:linear-gradient(to right, #07b2f0, #07b2f0, #0028fb, #0028fb, #bf00ff);
+}
+.story_box{
+    font-family: calib;
+    max-width: 750px;
+    padding: 20px;
+    margin: auto;
+    text-align: justify;
+    background: #fff;
+    background: #fff url('../image/bg2.png') right bottom no-repeat;
+    display: none;
+}
+.story_box p{
+    font-family: calib;
+    font-size: 16px;
+}
+#more{
+    display: none;
+    position: fixed;
+    background: #f1f1f1 url('../image/bg.png') bottom no-repeat;
+    background-size:100% ;
+    overflow: auto;
+}
+.more_box{
+    clear: both;
+    background: #d7eef5;
+    padding: 10px;
+}
+.more_box img{
+    width:250px;
+    margin-right: 10px;
+    vertical-align: bottom;
+}
+.more_name{
+    font-size: 26px;
+    color: blue;
+}
+.more_title{
+    font-size: 18px;
+}
+.more_btn{
+    background: blue;
+    background:linear-gradient(to right, #07b2f0, #07b2f0, #0028fb, #0028fb, #bf00ff) ;
+    color:#fff;
+    width: 110px;
+    padding: 15px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 60px;
+}
+.more_head{
+    border-left:solid 6px #99f;
+    background:#eef;
+    padding:10px;
+    padding-left:40px;
+    font-family: calib;
+}
+
+@media only screen and (max-width: 480px){
+
+    .story_box{
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .more_box {        
+        box-sizing: border-box;
+        text-align: center;
+        padding-top: 20px;
+    }
+}

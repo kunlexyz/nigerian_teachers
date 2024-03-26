@@ -1,0 +1,416 @@
+* {
+    font-family: calib;
+}
+@font-face {
+    font-family: the_fxx;
+    src: url(./Helvetica\ NeueLTW0693BlkExtObl.otf);
+}
+@font-face {
+    font-family: myFont;
+    src: url(./tt0142m_.ttf);
+}
+@font-face {
+    font-family: calib;
+    src: url(./trebuc.ttf);
+}
+
+body{
+    margin: 0px;
+    /* text-align: center; */
+}
+
+.head_nav{
+    display: inline-block;
+    text-align: right;
+}
+.head_btn{
+    display: inline-block;
+}
+.ce{text-align: center;}
+.mind_big {
+    max-width: 1100px;
+    margin: 20px auto;
+}
+.mind_box, ._2box {
+    width: 48%;
+    background: #f3f3f3;
+    box-sizing: border-box;
+    margin: auto;
+    display: inline-block;
+    padding: 20px;
+}
+._2box{
+    background: #fff;
+    padding: 0px;
+}
+._4box{
+    width:46%;
+    background:#eee;
+    min-height: 231px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    box-shadow: 4px 4px 14px #ccc;
+}
+.text_box{
+    padding: 20px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.story{
+    position: fixed;
+    top:10px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0, 0.8);
+    display: none;
+    z-index: 100;
+}
+.story2{
+    margin: 10px auto;
+    background: #fff;
+    border-radius:50px ;
+    width: 80%;
+    height: 90%;
+    overflow: auto;
+}
+.title_bar{
+    background: #000;color:#e8f706;padding: 10px;
+    border-top-right-radius:50px; border-top-left-radius: 50px;
+}
+.story_con{
+    margin: 20px 100px; padding:0px 100px 20px;
+}
+.cir{
+    background:#fff;
+    width: 8px;height: 8px;
+        border-radius:6px;border:solid 3px #fff;display: inline-block;
+        margin: 5px;
+        cursor: pointer;
+}
+
+.f_le {
+    float: left;
+}
+.f_ri {
+    float: right;
+}
+.pa{
+    font-size: 17px;
+    font-family: myFont;
+    text-align: justify;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+.font17{
+    font-size: 17px;
+}
+.myBtn{
+    background: #00f;
+    color: #fff;
+    width: 150px;
+    display: inline-block;
+    margin: auto;
+    padding: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    text-align: center;
+}
+.pic_con {
+    float: left;
+    width: 30%;
+    text-align: center;
+    padding: 3px;
+    padding-top: 0px;
+    padding-left: 0px;
+    margin-right: 20px;
+    background: #fff;
+}
+.pic_con_tab {
+    width: 30%;
+    text-align: center;
+    padding: 3px;
+    padding-top: 0px;
+    padding-left: 0px;
+    margin-right: 10px;
+    background: #fff;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+.pastor_pic_2{
+    width: 100%;
+    display: block;
+}
+.pastor_name_2{
+    color:blue;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: calib;
+    margin: auto;
+}
+.name_2{
+    color: #b2502d;
+    text-align: left;
+    font-family: calib;
+}
+.justified{text-align: justify;}
+
+.drop_cap {
+    font-size: 100px;
+    float: left;
+    line-height: 81%;
+    margin-right: 5px;
+}
+
+#logo{
+    width:150px; 
+    margin-top: 10px;
+    vertical-align: middle;
+}
+.r{
+    
+    width: 49%;
+    height: 250px;
+    background: #eee;
+    box-sizing: border-box;
+    margin: 20px auto;
+    display: inline-block;
+}
+.r img{width: 100%;}
+ul{
+    display: block;
+    margin-top: 7px;
+    margin-bottom: 0;
+}
+#head_man li{
+    display: inline-block;
+    margin: 3px;
+    color: white;
+    padding: 10px;
+}
+#head_man li:hover{
+    border-top: solid 4px white;
+    cursor: pointer;
+    background: #00f;
+    color:#fff;
+}
+.dd{
+    position: absolute;
+    background: #00f;
+    top: 59px;
+    transition: 2s;
+    height: 0px;
+    overflow: hidden;
+    z-index: 11;
+}
+.dd_menu{
+    color: #e8f706;
+    margin: 2px;
+    padding: 10px 5px;
+    background: linear-gradient(#00f,rgb(3, 3, 95));
+}
+#home:hover #home_drop{
+    height: 166px;
+}
+#about:hover #about_drop{
+    height: 290px;
+}
+#team:hover #team_drop{
+    height: 85px;
+}
+#get:hover #get_drop{
+    height: 207px;
+}
+#donate:hover #donate_drop{
+    /* height: 185px;
+    margin-left: -40px; */
+}
+
+.nav_image{
+    text-align: left;
+}
+
+
+/* ------footer------ */
+.column p{
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px;
+    text-align: left;
+}
+.row {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1100px;
+    margin: auto;
+}
+.column {
+    flex-basis: 31%;
+    border-radius: 10px;
+    padding: 20px 12px 0px;
+    box-sizing: border-box;
+    text-align: left;
+    line-height: 28px;
+}
+.column, .column p{
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.bull {
+    padding: 4px;
+    background-color: #F60;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.icon{
+    width: 20px;
+    vertical-align: middle;
+}
+
+a, a:visited{
+    text-decoration: none;
+    color: #000;
+}
+li{
+    display: inline-block;
+    margin: auto 10px;
+    color: purple;
+    font-weight: bolder;
+}
+
+
+@media only screen and (min-width: 951px){
+    .mobile, #myNav, .overlay2, .tab, .mobile_tab {display: none;}
+}
+@media only screen and (min-width: 481px) and (max-width: 950px){    
+    .desktop, .mobile{display: none;}
+    .tab{display:block;}
+    .tab_sl{width: 100%;display:none;
+        position: absolute;}
+    .margin_l_r {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .tab_box .pa, .tab .pa {
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .mob_pic_con {
+        width: 150px;
+        margin: auto;
+        text-align: center;
+        float: left;
+        padding: 2px;
+        background: #fff;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+    .card {
+        width: 45%;
+        background: #fff;
+        display: inline-block;
+        margin: 20px auto;
+        padding: 10px 15px;
+        text-align: center;
+        font-size: 17px;
+        vertical-align: top;
+        min-height: 95px;
+        box-shadow: 4px 4px 14px #ccc;
+    }
+}
+
+.card_con{text-align: center;}
+.card_reverse{
+    background-size: cover;
+    color:#fff;
+}
+/* for desktop_slider*/
+
+.sc{
+	height:250px;
+	background:#ddd;
+}
+.logo{
+width:99px;
+}
+#t, #d3, #d2,.casual{position:absolute;}
+
+#d2,#d3{
+top:99px;
+background:#ededed;
+padding:10px 99px;
+}
+#book{
+position:relative;
+top:0;
+width:100px;
+height:150px;
+background:#ddd;
+transform: rotate(-37.5deg) skew(10deg);
+}
+
+.slider_punk{
+	width:100vw;
+	height: 512px;
+	position: absolute;
+}
+.hid{display: none;}
+
+/**/
+
+/* for picture carousel */
+.hero{
+	width:100%;
+	height: 657px;
+	background: #fff;
+	overflow: hidden;
+}
+.hero .carousel{
+	width: 300px;
+	margin: 0px auto 0;
+	overflow: visible;
+}
+.carousel img{
+	-webkit-box-reflect: below 10px linear-gradient(rgba(255,255,255, 0.1),rgba(255,255,255, 0.1),rgba(255,255,255, 0.3));
+	max-width:420px;
+	max-height: 280px;
+}
+
+.book_first{
+    height: 320px;
+}
+.half_div{
+    width:48%;
+    display: inline-block;
+    vertical-align: top;
+}
+.footer_heading{
+    font-size: 45px;
+    color: #e8f706;
+    margin-bottom: 25px;
+}
+.fooot .half_div, #ratolf_footer  .half_div{
+    margin: 50px auto 0;
+}
+.segment{
+    display: none;
+}
+.segment_inner{
+    position:relative; box-sizing: border-box;
+    background: #fff;
+    box-shadow: 5px 5px 5px #aaa,-5px -5px 5px #aaa;
+}
+.segment_banner{
+    overflow:hidden;
+        height:350px;
+    text-align: center;
+}
+.body_content{
+    padding: 10px;
+}

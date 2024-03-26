@@ -1,0 +1,276 @@
+
+@media only screen and (max-width: 480px){
+    
+    .BG{
+        background:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/nav.jpg);
+        padding: 25px;
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+    ul{
+        display: none;
+    }
+    .raf h2{
+        font-size: 2px;
+        padding: 0px;
+    }
+    .parent{
+        border:solid #fb01ca; 
+        position: absolute; 
+        right: 0px;
+        padding: 6px 0;
+    }
+    .menu{
+        background-color: #fb01ca;
+        height: 3px;
+        width: 25px;
+        margin: 5px;
+    }
+    .t-text{
+        max-width: 600px;
+        margin: 20px;
+        text-align: center;
+    }
+    
+    .break{
+        font-size: 16px;
+        color: white;
+        padding: 0px 30px;
+    }
+    .mob{
+        min-height: 370px;
+        border-radius: 10px;
+    }
+    .over_lap{
+        position: absolute;
+        margin-top: -100px;
+        padding: 0px 40px;
+    }
+    
+    .base{
+        background-color: white;
+        color: black;
+        z-index: 2;
+        text-align: center;
+        min-height: 150px;
+        padding: 20px;
+        font-size: 16px;
+        font-weight: bold;
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: 2px 2px 6px #666666;
+    }
+    .mob_margin{
+        margin-top: 260px;
+    }
+    .t-layer{
+        text-align: justify;
+        font-family: myfont;
+        font-size: 16px;
+    }
+    .pic_con{
+        float: left;
+        width:47%;
+        text-align: center;padding: 2px;
+        background: #fff;
+        margin-right: 10px;
+    }
+    .mob_pic_con{
+        width: 250px;
+        margin: auto;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .pastor_pic{
+        width: 100%;
+        display: block;
+    }
+    .pastor_name{
+        color:#b2502d;
+        font-weight: bold;
+        font-size: 18px;
+        font-family: the_Font;
+    }
+    .name{
+        color: #b2502d;
+        text-align: left;
+        font-family: myfont;
+        font-size: 20px;
+        padding: 50px;
+    }
+    .margin_l_r{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .mob_box .pa{
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .head_speacial{
+        text-transform: uppercase;font-size:18px;text-align:center;background:#555;color:#fff;font-weight:bolder;font-family: the_font_b;
+    }
+    .drop_cap {
+        font-size: 100px;
+        float: left;
+        line-height: 81%;
+        margin-right: 5px;
+    }
+    /* -----south africa----- */
+    .r{
+        width: 100%;
+        text-align: center;
+    }
+    .r img{
+        width: 93%;
+        margin: 3px auto;
+    }
+    .column2 {
+        padding: 10px 8px;
+        box-sizing: border-box;
+        text-align: left;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .column2, .column2 p{
+        color: #fff;
+        text-transform: capitalize;
+    }
+    #logo{
+        width:130px;
+    }
+    .desktop, .tab, .desktop_and_tab{display: none;}
+
+    #last_layer{
+        display: inline-block;
+    }
+
+    /* for mobile slider */
+    .box2Top, .boxSide2, .boxSide2noColor {
+        width: 100%;
+        min-width: 100%;
+        height: auto;
+        min-height: inherit;
+        float: none;
+        margin: 0px;
+    }
+    .box2TopIn {
+        height: 200px;
+    }
+    .SliderImage {
+        width: 100%;
+        height: 200px;
+    }
+    .box2belowRed {
+        background-color: #000;
+        color: #fff;
+        padding: 2px;
+        font-size: 12px;
+    }
+
+    .card{
+        background:#fff;
+        display: inline-block;
+        margin: 20px;
+        padding: 15px;
+        text-align: center;
+        font-size: 17px;
+        box-shadow: 4px 4px 14px #ccc;
+    }
+
+    .m_sl{
+        width: 100%;
+        position: absolute;
+        display: none;
+    }
+}
+
+/*
+css code for Pop Out Menu
+*/
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color:#F60;
+    overflow-x: hidden;
+    transition: 0.5s;
+    text-align:center;
+    font-family: the_font;
+  }
+  .overlay2{opacity:0.5;
+  background-color:#000;
+    position: fixed;
+    z-index: 96;
+    height: 100%;
+    width: 100%;
+    display:none;
+      top: 0px;}
+  
+  .overlay-content {
+    position: relative;
+    width: 100%;
+    text-align:left;
+    padding: 10px 0px;
+    background-color:#FFF;
+  }
+  
+  .overlay .menu1 {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #222;
+    display: block;
+    transition: 0.3s;
+  }
+  .menu1:hover{
+      cursor:pointer;background-color:#DDD;
+  }
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .closebtn {
+    position: absolute;
+  }
+  
+  .close3{
+      font-size:45px;
+      cursor:pointer;
+      color:#FFF;
+      background-color:#f00;
+      line-height: 40px;
+      top:0px;
+      font-weight:bold;
+      border:solid 1px #FF0000;
+      z-index:103;
+  }
+  
+  .bull{
+      padding:4px;
+      background-color:#F60;
+      display:inline-block;
+      vertical-align:middle;
+      margin-right:10px;
+  }
+  /* @end of Pop Out Menu*/
+  .slidis{
+    display: none;
+  }
+  .slidis_m{
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #FFF;
+  }
+  #banner_for_mobile{
+    width: 100%;
+    height: 360px;
+    overflow: hidden;
+  }
