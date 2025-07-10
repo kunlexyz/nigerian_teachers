@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Two‑Row Glossy Auto‑Scroll Gallery</title>
+  <style>
+    /* reset & base */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #111; color: #fff; font-family: sans-serif; padding: 2rem; }
+
+    h2 {
+      margin: 1rem 0 .5rem;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    .gallery-row {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 2rem;
+      background: 
+        linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.02)),
+        #222;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+
+    .gallery-track {
+      display: flex;
+      /* NOTE: for continuous loop in row2, we duplicate the items */
+    }
+
+    .gallery-item {
+      flex: 0 0 auto;
+      width: calc(100% / 5); /* default: 5 items per view */
+      padding: 0.5rem;
+      transition: transform .3s ease;
+    }
+    .gallery-item img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: .75rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
+
+    /* MOBILE: 3 items per view */
+    @media (max-width: 600px) {
+      .gallery-item {
+        width: calc(100% / 3);
+      }
+    }
+
+    /* Row 1: back‑and‑forth */
+    .row1 .gallery-track {
+      animation: scroll-back-forth 20s ease-in-out infinite alternate;
+    }
+    @keyframes scroll-back-forth {
+      from   { transform: translateX(0); }
+      to     { transform: translateX(calc(-1 * (100% - 100vw))); }
+    }
+
+    /* Row 2: continuous loop to the left (so images move right) */
+    .row2 .gallery-track {
+      animation: scroll-loop 30s linear infinite;
+    }
+    @keyframes scroll-loop {
+      from { transform: translateX(0); }
+      to   { transform: translateX(calc(-50%)); }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Row 1: Ping‑Pong Auto‑Scroll</h2>
+  <div class="gallery-row row1">
+    <div class="gallery-track">
+      <!-- 10 images -->
+      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+    </div>
+  </div>
+
+  <h2>Row 2: Continuous Loop</h2>
+  <div class="gallery-row row2">
+    <div class="gallery-track">
+      <!-- Duplicate the same 10 images twice for seamless loop -->
+      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+      <!-- repeat -->
+      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+    </div>
+  </div>
+
+</body>
+</html>
