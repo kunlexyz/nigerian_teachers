@@ -1,16 +1,9 @@
 
-@font-face {
-    font-family: calib;
-    src: url(./trebuc.ttf);
-}
-body{
-    margin: 0px;
-    background: #e3e1e1;
-}
-#sleed{
+#sleed {
     overflow: hidden;
 }
-#sleed img{
+
+#sleed img {
     height: 350px;
 }
 
@@ -18,84 +11,153 @@ body{
     border-left: solid 6px #99f;
     background: #eef;
     padding: 10px;
-    padding-left: 40px;
     font-family: calib;
-    color:blue;
+    color: blue;
 }
+
 .about_story p {
     font-family: calib;
     font-size: 16px;
     text-align: justify;
 }
-.about_story li{
-    display:list-item;
+
+.about_story li {
+    display: list-item;
     color: #000;
 }
-.about_story li:hover{
+
+.about_story li:hover {
     background: #fff;
     color: #000;
     border-bottom: #aaa solid 2px;
 }
-.about_img, .about_img_2{
-    float:right;
+
+.about_img,
+.about_img_2 {
+    float: right;
     width: 335px;
-    margin: 20px;
+    margin: 4px 20px;
     margin-right: 0px;
     margin-bottom: 0px;
 }
-.about_img_2{
+
+.about_img_2 {
     margin-top: 0px;
 }
-#about_{
+
+#about_ {
     font-size: 70px;
-    width:100%;
-    position:absolute;
-    top:150px;
-    color:#fff;
+    width: 100%;
+    position: absolute;
+    top: 150px;
+    color: #fff;
 }
-#major_con, .major_con{
+
+#major_con,
+.major_con {
     padding: 30px 10px;
     max-width: 900px;
     margin: auto;
     margin-top: -70px;
 }
 
-@media only screen and (max-width: 480px){
-    #about{
-        font-size: 40px;
-        width:100%;
-        position:absolute;
-        top:150px;
-        color:#fff;
+.our {
+    font-size: 77px;
+    font-weight: bolder;
+    /* text-shadow: 4px 4px #333; */
+    margin: auto;
+    margin-top: 100px;
+    color: rgb(199, 16, 241);
+}
+._3box {
+    max-width: 300px;
+    display: inline-block;
+    margin: auto;
+}
+
+@media only screen and (max-width: 480px) {
+
+    #about_ {
+        color: yellow;
+        top: 210px;
+        font-size: 45px;
     }
-    #major_con{
-        padding: 10px 15px;
+
+    #major_con,
+    .major_con {
+        padding: 20px;
         max-width: 900px;
         margin: auto;
     }
-    .about_img, .about_img_2{
-        float:right;
-        width: 335px;
-        margin: 0px;
-        margin-right: 0px;
-        margin-bottom: 5px;
+
+    .about_img,
+    .about_img_2 {
+        float: none;
+        width: 100%;
+        margin: auto;
     }
-    
+
+    .mind_big {
+        margin: 0 auto;
+    }
+
+    .our {
+        font-size: 40px;
+        font-weight: bolder;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .segment_banner {
+        height: 200px;
+    }
 
 }
-@media only screen and (min-width: 481px) and (max-width: 950px){  
-    
-    #about{top:190px;}
+
+@media only screen and (min-width: 481px) and (max-width: 950px) {
+
+
+    #about_ {
+        top: 310px;
+    }
+
     .mind_big {
         max-width: 700px;
         margin: 20px auto;
     }
+
     #major_con {
         padding: 30px 15px;
         max-width: 700px;
         margin: auto;
     }
-}
-@media only screen and (min-width: 951px){
 
+    .our {
+        font-size: 60px;
+        font-weight: bolder;
+        text-shadow: 4px 4px #333;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .about_img,
+    .about_img_2 {
+        float: none;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 951px) {
+
+    .heading_topic {
+        padding-left: 40px;
+    }
+    ._3box {
+        width: 32%;
+        display: inline-block;
+        margin: auto;
+    }
+    .mentoring_{
+        min-height: 365px;
+    }
 }

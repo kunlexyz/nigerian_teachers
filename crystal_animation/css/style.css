@@ -1,5 +1,8 @@
 * {
     font-family: calib;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 @font-face {
     font-family: the_fxx;
@@ -57,7 +60,28 @@ body{
     padding-bottom: 10px;
     box-sizing: border-box;
 }
-
+.that_purple{
+    color: #f30aba;
+}
+.rounded_card{
+    border-radius: 9px;
+    background-color: #eee;
+    padding: 4px;
+    margin: 3px;
+    width: 40%;
+    height: 170px;
+    display: inline-flex;
+    background-size: 100%;
+    background-position: center;
+    vertical-align: top;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.image_in_rounded_card2{
+    max-width: 100%;
+    max-height: 100%;
+}
 .story{
     position: fixed;
     top:10px;
@@ -160,7 +184,7 @@ body{
 .drop_cap {
     font-size: 100px;
     float: left;
-    line-height: 81%;
+    line-height: 73%;
     margin-right: 5px;
 }
 
@@ -414,3 +438,67 @@ transform: rotate(-37.5deg) skew(10deg);
 .body_content{
     padding: 10px;
 }
+.heading_crystal{
+    margin: 30px;
+}
+.button_{
+    background: #eee;display: inline-flex;justify-content: center;align-items: center;border: solid 2px;border-radius: 8px;
+    font-size: 13px;
+    padding: 2px;
+}
+.button_con{
+    margin-bottom: 20px;
+    text-align: right;
+    padding: 5px 32px;
+}
+/* Scrolling animation */
+
+.gallery-row {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .gallery-track {
+    display: flex;
+    /* NOTE: for continuous loop in row2, we duplicate the items */
+  }
+
+  .gallery-item {
+    flex: 0 0 auto;
+    width: calc(100% / 5); /* default: 5 items per view */
+    padding: 0.5rem;
+    transition: transform .3s ease;
+  }
+  .gallery-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: .75rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  }
+
+  .gallery-item:hover {
+    transform: scale(1.05);
+  }
+  /* MOBILE: 3 items per view */
+    @media (max-width: 600px) {
+        .gallery-item {
+          width: calc(100% / 3);
+        }
+      }
+    /* Row 2: continuous loop to the left (so images move right) */
+    .row2 .gallery-track {
+        animation: scroll-loop 10s linear infinite;
+      }
+      .row2 .gallery-track-reverse {
+        display: flex;
+          animation: scroll-reverse 10s linear infinite;
+        }
+      @keyframes scroll-loop {
+        from { transform: translateX(0); }
+        to   { transform: translateX(calc(-255%)); }
+      }
+      @keyframes scroll-reverse {
+        from { transform: translateX(calc(-155%)); }
+        to   { transform: translateX(0); }
+      }
