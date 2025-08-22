@@ -1,398 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tave Pro</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/mobile.css">
-    <link rel="stylesheet" href="./css/jquery.flipster.min.css">
-    <link rel="stylesheet" href="./css/form.css">
-    <link rel="stylesheet" href="./css/profile2.css" />
-    <link rel="stylesheet" href="./css/profile2-mobile.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crystal Animation</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/mobile.css">
+  <link rel="stylesheet" href="./css/jquery.flipster.min.css">
+  <link rel="stylesheet" href="./css/form.css">
+  <link rel="stylesheet" href="./css/profile2.css" />
+  <link rel="stylesheet" href="./css/profile2-mobile.css" />
+  <link rel="stylesheet" href="./css/grid.css" />
+  <style>
+    .hero_section {
+      display: block;
+    }
+  </style>
 </head>
 
 <body id="bdy">
+  <div class="mobile">
 
     <div class="parent" onclick="openNav()">
-        <div class="menu"></div>
-        <div class="menu"></div>
-        <div class="menu"></div>
+      <div class="menu"></div>
+      <div class="menu"></div>
+      <div class="menu"></div>
     </div>
     <div onclick="test_();" class="mobile ce" style="
-     background-color: #eee;
-    " >
-            <img style="width: 200px;margin-left: -8px;" id="logo" src="images/logo_cr.jpg" alt="Logo">
-            <div style="float: right;font-family: the_font;">
-                <ul>
-                    <a href="./index.html">
-	<li>HOME</li>
-</a>
-                    <a href="./about.html">
-<li>ABOUT US</li>
-</a>
-                    <a href="./team.html">
-<li>CONTACT</li>
-</a>
-                    <a href="./get_involve.html">
-	<li>MEDIA</li>
-</a>
-            
-    <a href="./media.html">
-                    <li>MEDIA</li>
-    </a>
+   background-color: #eee;
+  ">
+      <img style="width: 200px;margin-left: -8px;" id="logo" src="images/logo_cr.jpg" alt="Logo">
+      <div style="float: right;font-family: the_font;">
+        <ul>
+          <a href="./index.html">
+            <li>HOME</li>
+          </a>
+          <a href="./about.html">
+            <li>ABOUT US</li>
+          </a>
+          <a href="./team.html">
+            <li>CONTACT</li>
+          </a>
+          <a href="./get_involve.html">
+            <li>MEDIA</li>
+          </a>
 
-                    <a href="https://ratolm.blogspot.com/">
-                    <li>BLOG</li>
-                    </a>
-                </ul>
-            </div>
+          <a href="./media.html">
+            <li>MEDIA</li>
+          </a>
+
+          <a href="https://ratolm.blogspot.com/">
+            <li>BLOG</li>
+          </a>
+        </ul>
+      </div>
+    </div>
+    <div id="myNav" class="overlay" style="">
+      <div class="closebtn close3" onclick="closeNav()">×</div> <img class="coI" src="./imageS/logo_cr.jpg"
+        style="width:200px; margin:10px auto;">
+      <div class="overlay-content">
+        <a href="./index.html">
+          <div class="menu1">
+            <div class="bull"></div>HOME
+          </div>
+        </a>
+        <a href="./about.html">
+          <div class="menu1" onclick="">
+            <div class="bull"></div>ABOUT US
+          </div>
+        </a>
+        <a href="#">
+          <div class="menu1">
+            <div class="bull"></div>CONTACT US
+          </div>
+        </a>
+        <div class="menu1">
+          <div class="bull"></div>MEDIA
+        </div>
+      </div>
     </div>
 
-    <div onclick="crys()" class="desktop" style="background-color:#fff;padding:7px 25px;background-size: cover;background-position: center;background-repeat: no-repeat;">
+    <div class="overlay2" onclick="closeNav()"></div>
 
-        <img id="logo" src="images/logo_cr.jpg" alt="Logo">
-        <div style="
-            vertical-align: middle;
-            float: right;
-            font-family: the_font;
-            color: black;
-            margin-top: 15px;
-        ">
-            <ul>
-                <a href="./index.html">
-        <li id="home">HOME <!--
-            <div id="home_drop" class="dd">
-                <div class="dd_menu">- Story Behind</div>
-                <div class="dd_menu">- Save</div>
-                <div class="dd_menu">- Our Latest Activities</div>
-                <div class="dd_menu">- Acount</div>
-            </div>-->
-        </li>
-    </a>
-                
-        <li id="about">
-            <a href="./about_full.html"> ABOUT </a>
-            <div id="about_drop" class="dd">
-                <a href="./about.html#motto">
-                    <div class="dd_menu">- Our Motto</div>
-                </a>
-                <a href="./about.html#about_us">
-                    <div class="dd_menu">- About Us</div>
-                </a>
-                <a href="./about.html#purpose">
-                    <div class="dd_menu">- Our Purpose</div>
-                </a>
-                <!--
-                <a href="./about.html#">
-                    <div class="dd_menu">- Our Mission</div>
-                </a>
-                    <div class="dd_menu">- Our Vision</div>
-                -->
-                <a href="./about.html#support">
-                    <div class="dd_menu">- Our Support Areas</div>
-                </a>
-                <a href="./about.html#commitment">
-                    <div class="dd_menu">- Our Commitments</div>
-                </a>
-                <a href="./about.html#statement">
-                    <div class="dd_menu">- Our Statement of Faith</div>
-                </a>
-                <a href="./about.html#spiritual">
-                    <div class="dd_menu">- The Spiritual Unity</div>
-                </a>
-    
-            </div>
-        </li>
-    
-        <li id="get">
-                <a href="./get_involve.html">
-                GET INVOLVE
-                </a>
-            <div id="get_drop" class="dd">
-            <a href="./get_involve.html#compassion">
-                <div class="dd_menu">- Compassion</div>
-                </a>
-                <a href="./get_involve.html#community">
-                <div class="dd_menu">- Community Empowerment</div>
-                </a>
-                <a href="./get_involve.html#transforming">
-                <div class="dd_menu">- Transforming communities</div>
-                </a>
-                <a href="./get_involve.html#youth">
-                <div class="dd_menu">- Youth Empowerment</div>
-                </a>
-                <!--
-                <div class="dd_menu">- Mission</div>
-                -->
-            </div>
-        </li>
-    
-                
-    <a href="./media.html">
-                <li>MEDIA</li>
-                </a>
-                
-                <a href="https://ratolm.blogspot.com/">
-                <li>BLOG</li>
-                </a>
-                
-                <a href="./contact.html">
-                    <li>CONTACT</li>
-                </a>
-            </ul>
-        </div>
-        
-    </div>
-    <div class="desktop" style="
-     background-color: #eee;
-     height: 300px;
-     text-align: center;
-     "
-    >
-
-        <div class="slidis" style="max-width: 1000px;margin: auto;">
-            <img id="cro1" src="./images/crystal_machine.png" alt="machine" 
-             style="width: 350px;height: 300px;
-             vertical-align: top;
-             " 
-            >
-            <div style="display: inline-block;padding-left: 100px;max-width: 500px;padding-top:25px;text-align: left;">
-                <div id="cro2" style="color:#ff00ff; font-size: 35px;font-weight: bolder;"
-                >
-                    HIGH QUALITY
-                </div>
-                <div id="cro3" style="color:rgb(40, 141, 243); font-size: 35px;font-weight: bolder;"
-                >
-                 PRINTING SERVICES
-                 </div>
-                 <div id="cro4" style="margin-top: 10px;max-width: 310px;font-size: 20px;">
-                    We believe in responsible printing practices and strive to minimize our environmental footprint through eco-friendly materials and processes.
-                 </div>
-            </div>
-        </div>
-        <div class="slidis" style="
-        background-image: url('./images/crystal\ animation_slide_sample2.png');
-        background-size: 100% 100%;
-        max-width: 1000px;height:100%;margin: auto;
-        "></div>
-        <div id="sli" class="slidis ce" style="
-        background-image: url('./images/crystal\ animation_slide2.png');
-        background-size: 100% 100%;
-        height:100%;margin: auto;
-        font-size: 22px;
-        ">
-                <div style="color: #ff00ff;padding-top: 50px;font-size: 30px;">unlock the power of your brand with</div>
-                <div style="font-size: 65px;color: #fff;letter-spacing: 20px;">CRYSTAL ANIMATION</div>
-                <div style="color: #ff0;margin: auto;">
-                    elevate your business identity through expert branding and printing solutions
-                    <br>
-    From captivating logos to compelling marketing materials, we craft narratives
-    that resonate.. <br>
-    Standout, be remembered 
-                </div>
-        </div>
-        
-        <div id="s_4" class="slidis" style="margin: auto;background-color: #591db3;height: 100%;">
-            <div style="height: 300px;
-            position: absolute;
-            right: 300px;
-            " >
-                <img id="cro1" src="./images/crystal animation_slide_dairy.png" alt="machine" 
-                style="height: 302px;margin-top: -1px;" 
-                >
-            </div>
-            <div style="position: absolute;left: 300px;">
-                <div style="
-                  display: inline-block;max-width: 500px;padding:20px;text-align: left;
-                  background-color: #fff;
-                  box-shadow: 2px 2px 6px #666666;
-                  margin-top: 30px;
-                ">
-                    <div id="cr4_2" style="color:#591db3; font-size: 30px;font-weight: bolder;"
-                    >
-                    BRANDING
-                    </div>
-                    <div id="cr4_4" style="margin: 10px 0;max-width: 310px;font-size: 16px;">
-                        Our expert team is dedicated to crafting compelling branding solutions that stand out in today's competitive market. Whether you're looking to refresh your brand identity or create a new one from scratch, we've got you covered.
-                    </div>
-                    <div id="cro3" style="background-color:#591db3;color: #fff; font-size: 20px;font-weight: bolder;
-                    display: inline-block;
-                    padding: 10px;
-                    "
-                    >
-                    More
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div id="s_5" class="slidis" style="margin: auto;background-color: #efe9e9;display: block;height: 100%;">
-            <img id="s_5x1" src="./images/crystal animation_slide5x1.png" alt="machine" 
-                    style="width:50%;height: 302px;position: absolute;left:0" 
-                    >
-            <div id="s_5x2" style="
-                display: inline-block;max-width: 500px;padding:20px;text-align: left;
-                margin-top: 30px;
-                position: absolute;
-                left: 18%;
-            ">
-                <div id="s_5x3" style="color:#fff; font-size: 30px;font-weight: bolder;"
-                >
-                KEYHOLDER
-                </div>
-                <div id="s_5x4" style="margin: 10px 0;max-width: 310px;font-size: 16px;color:#efe9e9">
-                    With a focus on creativity, quality, and exceptional customer service, we go above and beyond to bring your vision to life. Trust us to deliver unmatched results that exceed your expectations.
-                </div>
-                <div style="background-color:#f89e2c;color: #fff; font-size: 20px;
-                display: inline-block;
-                padding: 10px;
-                "
-                >
-                More
-                </div>
-            </div>
-            <div style="height: 300px;
-            position: relative;
-            margin: auto;
-            max-width: 930px;
-            text-align: left;
-            " >
-                <div style="margin-left: -3px;">
-                    <div style="text-align: right;">
-                        <img id="cr5_1" src="./images/crystal animation_slide5.png" alt="machine" 
-                        style="height: 302px;" 
-                        >
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        
-    </div>
     <div id="banner_for_mobile">
-        <div class="mobile slidis_m" style="display: block;">
-            <img id="crom1" src="./images/crystal_machine.png" alt="machine" 
-            style="width: 150px;margin-top: 28px;
-            " 
-            >
-            <div style="padding-left: 150px;max-width: 500px;padding-top:25px;text-align: left;position: relative;top:-100px">
-                <div id="crom2" style="color:#ff00ff; font-size: 22px;font-weight: bolder;"
-                >
-                    HIGH QUALITY
-                </div>
-                <div id="crom3" style="color:rgb(40, 141, 243); font-size: 22px;font-weight: bolder;"
-                >
-                PRINTING SERVICES
-                </div>
-                <div id="crom4" style="margin-top: 10px;max-width: 190px;font-size: 16px;">
-                    We believe in responsible printing practices and strive to minimize our environmental footprint through eco-friendly materials and processes.
-                </div>
-            </div>
-
+      <div class="mobile slidis_m" style="display: block;">
+        <img id="crom1" src="./images/crystal_machine.png" alt="machine" style="width: 150px;margin-top: 28px;
+            ">
+        <div
+          style="padding-left: 150px;max-width: 500px;padding-top:25px;text-align: left;position: relative;top:-100px">
+          <div id="crom2" style="color:#ff00ff; font-size: 22px;font-weight: bolder;">
+            HIGH QUALITY
+          </div>
+          <div id="crom3" style="color:rgb(40, 141, 243); font-size: 22px;font-weight: bolder;">
+            PRINTING SERVICES
+          </div>
+          <div id="crom4" style="margin-top: 10px;max-width: 190px;font-size: 16px;">
+            We believe in responsible printing practices and strive to minimize our environmental footprint
+            through eco-friendly materials and processes.
+          </div>
         </div>
-        
-        <div class="mobile slidis_m" style="min-height: 360px;">
-            <div class="ce" 
-            style="background:linear-gradient(to right, rgb(216 74 159), rgb(124 70 143));
+
+      </div>
+
+      <div class="mobile slidis_m" style="min-height: 360px;">
+        <div class="ce" style="background:linear-gradient(to right, rgb(216 74 159), rgb(124 70 143));
              padding-top:20px ;
              height: 210px;
             ">
-                <div id="slid_2x1" style="color: #fff;">We brand</div>
-                <div id="slid_2x2" style="font-size: 30px;color:#fff;position: relative;z-index: 2;height: 35px;">GIFT ITEMS</div>
-                <div style="position: absolute;width:100%;text-align: center;margin-top: -15px;">
-                    <img id="slid_2x3" style="width: 230px;" src="./images/crystal animation_slide5.png">
-                    <div id="slid_2x4" style="color:#ff0;text-align: center;">
-                        We Make YOU STANDOUT <br>in the Crowded Market.  
-                    </div>
-                </div>
+          <div id="slid_2x1" style="color: #fff;">We brand</div>
+          <div id="slid_2x2" style="font-size: 30px;color:#fff;position: relative;z-index: 2;height: 35px;">GIFT
+            ITEMS</div>
+          <div style="position: absolute;width:100%;text-align: center;margin-top: -15px;">
+            <img id="slid_2x3" style="width: 230px;" src="./images/crystal animation_slide5.png">
+            <div id="slid_2x4" style="color:#ff0;text-align: center;">
+              We Make YOU STANDOUT <br>in the Crowded Market.
             </div>
-            <img style="width: 100%;margin-top: -3px;" src="./images/crystal animation_m_slide5x1.png">
+          </div>
         </div>
-        <div class="mobile slidis_m" style="min-height: 360px;background-color: rgb(213, 212, 212);">
-            <img id="slid_3x1" style="margin-left: 10px;margin-top:20px;width: 170px;" src="./images/crystal animation_m_slide2.png">
-            <div style="position: absolute;width: 100%;text-align: center;">
-                <img id="slid_3x2" style="
+        <img style="width: 100%;margin-top: -3px;" src="./images/crystal animation_m_slide5x1.png">
+      </div>
+      <div class="mobile slidis_m" style="min-height: 360px;background-color: rgb(213, 212, 212);">
+        <img id="slid_3x1" style="margin-left: 10px;margin-top:20px;width: 170px;"
+          src="./images/crystal animation_m_slide2.png">
+        <div style="position: absolute;width: 100%;text-align: center;">
+          <img id="slid_3x2" style="
                 margin-top: -90px;
-                width: 250px;" 
-                src="./images/crystal animation_slide5.png">
-                <div id="slid_3x3" style="text-align: right;font-size: larger;padding-right: 30px;margin-top: -20px;">
-                    Increase Your <br>
-                    Brand Visibility
-                </div>
-            </div>
+                width: 250px;" src="./images/crystal animation_slide5.png">
+          <div id="slid_3x3" style="text-align: right;font-size: larger;padding-right: 30px;margin-top: -20px;">
+            Increase Your <br>
+            Brand Visibility
+          </div>
         </div>
-        <div class="mobile slidis_m" style="min-height: 360px;">
-            <img style="position: absolute;" src="./images/crystal animation_m_slide1.png">
-            <div style="position: relative;z-index: 2;padding: 100px 0 0 20px;">
-                <div style="color: #fc9002;font-size: 18px;">Elevate Your</div>
-                <div style="font-size: 38px;color: #0000ff;line-height: 30px;">
-                    BUSINESS <br> IDENTITY
-                </div>
-                <div style="color: #ff0;margin-top: 120px;">
-                    through our <br>Expert Branding Solutions
-                </div>
-            </div>
+      </div>
+      <div class="mobile slidis_m" style="min-height: 360px;">
+        <img style="position: absolute;" src="./images/crystal animation_m_slide1.png">
+        <div style="position: relative;z-index: 2;padding: 100px 0 0 20px;">
+          <div style="color: #fc9002;font-size: 18px;">Elevate Your</div>
+          <div style="font-size: 38px;color: #0000ff;line-height: 30px;">
+            BUSINESS <br> IDENTITY
+          </div>
+          <div style="color: #ff0;margin-top: 120px;">
+            through our <br>Expert Branding Solutions
+          </div>
         </div>
-        <div class="mobile slidis_m" style="min-height: 360px;background-color: #c7dbe5;">
-            <img style="position: absolute;right:0" src="./images/crystal animation_m_slide_dairy1x2.png">
-            <div style="position: absolute;z-index: 2;width: 100%;">
-                <div style="text-align: right;margin: 30px 20px 0 0;position: relative;z-index: 2;">
-                    <div style="font-size: 38px;color: #fff;line-height: 35px;">
-                        EVENT <br> PRINTING
-                    </div>
-                    <div style="color: #fcf402;font-size: 18px;display: inline-block;max-width: 150px;margin-top: 15px;">
-                        Make your event memorable with our printing solutions
-                    </div>
-                </div>
-                <div class="float_me" style="position: absolute;">
-                    <img style="width: 230px;margin-top: -100px;" src="./images/crystal animation_m_slide_dairy1x1.png">
-                </div>
-                
-                <div style="text-align: right;margin: 50px 20px 0 0;">
-                    <img src="./images/crystal animation_m_slide2x2.png">
-                    <div style="color: #fff;">+2348033477477</div>
+      </div>
+      <div class="mobile slidis_m" style="min-height: 360px;background-color: #c7dbe5;">
+        <img style="position: absolute;right:0" src="./images/crystal animation_m_slide_dairy1x2.png">
+        <div style="position: absolute;z-index: 2;width: 100%;">
+          <div style="text-align: right;margin: 30px 20px 0 0;position: relative;z-index: 2;">
+            <div style="font-size: 38px;color: #fff;line-height: 35px;">
+              EVENT <br> PRINTING
+            </div>
+            <div style="color: #fcf402;font-size: 18px;display: inline-block;max-width: 150px;margin-top: 15px;">
+              Make your event memorable with our printing solutions
+            </div>
+          </div>
+          <div class="float_me" style="position: absolute;">
+            <img style="width: 230px;margin-top: -100px;" src="./images/crystal animation_m_slide_dairy1x1.png">
+          </div>
 
-                </div>
-            </div>
-            
+          <div style="text-align: right;margin: 50px 20px 0 0;">
+            <img src="./images/crystal animation_m_slide2x2.png">
+            <div style="color: #fff;">+2348033477477</div>
+
+          </div>
         </div>
+
+      </div>
 
     </div>
 
-<!-- body things -->
-<div class="body_content">
-    <h3>Welcome</h3>
-</div>
-<div class="body_content" style="background-image: url('./images/yel.jpg');padding: 40px;">
+    <!-- body things -->
+    <div class="body_content">
+      <h3>Welcome</h3>
+    </div>
+    <div class="body_content" style="background-image: url('./images/yel.jpg');padding: 40px;">
 
-    At Crystal Animation, we blend creativity with precision to bring your visions to life. As a premier printing company, we specialize in delivering top-notch printing solutions tailored to meet your needs, whether personal or professional. From business cards to banners, invitations to promotional materials, we're your one-stop destination for all things print.
-</div>
-<div class="body_content" style="background-image: url('./images/crystal\ animation_m_slide4.png');
+      At Crystal Animation, we blend creativity with precision to bring your visions to life. As a premier printing
+      company, we specialize in delivering top-notch printing solutions tailored to meet your needs, whether personal
+      or professional. From business cards to banners, invitations to promotional materials, we're your one-stop
+      destination for all things print.
+    </div>
+    <div class="body_content" style="background-image: url('./images/crystal\ animation_m_slide4.png');
     background-size: 100% 100%;
 padding: 40px;">
-    <div style="color: #fff;font-size: 30px;margin: 40px 0;">
+      <div style="color: #fff;font-size: 30px;margin: 40px 0;">
         OUR<br>
         SERVICES
+      </div>
+      <div style="color: #ff0;font-size: 17px;">
+        Our expert team is dedicated to crafting compelling branding solutions that stand out in today's competitive
+        market. Whether you're looking to refresh your brand identity or create a new one from scratch, we've got
+        you covered.
+      </div>
     </div>
-    <div style="color: #ff0;font-size: 17px;">
-        Our expert team is dedicated to crafting compelling branding solutions that stand out in today's competitive market. Whether you're looking to refresh your brand identity or create a new one from scratch, we've got you covered.
+    <div class="ce">
+      <img src="./images/cry_asset3.png" style="margin: auto;width: 350px;" />
     </div>
-</div>
-<div class="ce">
-    <img src="./images/cry_asset3.png" style="margin: auto;width: 350px;" />
-</div>
-<img src="./images/cry_asset4.png" style="margin: auto;width: 100%;" />
+    <img src="./images/cry_asset4.png" style="margin: auto;width: 100%;" />
 
-<div class="body_content pa">
-    <span class="drop_cap">A</span>t <strong class="that_purple"> Crystal Animation</strong>, we specialize in high-quality branding and printing solutions designed to elevate your business identity. From customized <strong class="that_purple">T-shirts </strong> and <strong class="that_purple"> car branding </strong> to <strong class="that_purple"> award plaques </strong> and <strong class="that_purple"> 3D dome stickers </strong>, we turn your ideas into eye-catching realities.
-</div>
-<div class="body_content pa">
-    <span class="drop_cap">W</span>hether you're a startup, a corporate organization, or planning an event, our creative touch and professional finish will set your brand apart. Let’s help you <strong class="that_purple">make a lasting impression</strong>.
-</div>
-<!-- 
+    <div class="body_content pa">
+      <span class="drop_cap">A</span>t <strong class="that_purple"> Crystal Animation</strong>, we specialize in
+      high-quality branding and printing solutions designed to elevate your business identity. From customized <strong
+        class="that_purple">T-shirts </strong> and <strong class="that_purple"> car branding </strong> to <strong
+        class="that_purple"> award plaques </strong> and <strong class="that_purple"> 3D dome stickers </strong>, we
+      turn your ideas into eye-catching realities.
+    </div>
+    <div class="body_content pa">
+      <span class="drop_cap">W</span>hether you're a startup, a corporate organization, or planning an event, our
+      creative touch and professional finish will set your brand apart. Let’s help you <strong class="that_purple">make
+        a lasting impression</strong>.
+    </div>
+    <!-- 
 <div class="ce">
     <div class="rounded_card" style="background-image: url(./images/mug3.png);" ></div>
     <div class="rounded_card" style="background-image: url(./images/adron\ homes\ ILEYA\ T-SHIRT\ 01.jpg);" ></div>
@@ -401,199 +221,199 @@ padding: 40px;">
     <div class="rounded_card" ></div>
 </div>
  -->
-<div class="ce">
-    <div class="rounded_card" >
+    <div class="ce">
+      <div class="rounded_card">
         <img src="./images/mug3.png" class="image_in_rounded_card2" />
-    </div>
-    <div class="rounded_card" >
+      </div>
+      <div class="rounded_card">
         <img src="./images/adron_homes_ILEYA_T-SHIRT_01.jpg" class="image_in_rounded_card2" />
+      </div>
+      <div class="rounded_card" style="background-image: url(./images/keyholder.jpg); background-size: 100% 100%;">
+
+      </div>
+      <div class="rounded_card" style="background-image: url(./images/award.jpg); background-size: 100% 100%;">
+
+      </div>
     </div>
-    <div class="rounded_card" style="background-image: url(./images/keyholder.jpg); background-size: 100% 100%;" >
-        
-    </div>
-    <div class="rounded_card" style="background-image: url(./images/award.jpg); background-size: 100% 100%;" >
-        
-    </div>
-</div>
-<div class="ce">
-    <div class="rounded_card" style="background-image: url(./images/1193057_OSYY8P0.jpg); 
+    <div class="ce">
+      <div class="rounded_card" style="background-image: url(./images/1193057_OSYY8P0.jpg); 
     width: 300px;
     background-size: 100% 100%;
     height: 220px;"></div>
-</div>
+    </div>
 
-<img src="./images/elevate.png" style="margin-top: 20px;" />
-<div class="body_content pa">
-    Our state-of-the-art technology allows us to bring your designs to life with unmatched precision and creativity.
-</div>
-<img src="./images/elevate2.png" />
+    <img src="./images/elevate.png" style="margin-top: 20px;" />
+    <div class="body_content pa">
+      Our state-of-the-art technology allows us to bring your designs to life with unmatched precision and creativity.
+    </div>
+    <img src="./images/elevate2.png" />
 
-<div class="gallery-row row2">
-    <div class="gallery-track">
-      <!-- Duplicate the same 10 images twice for seamless loop -->
-      <div class="gallery-item"><img src="./images/award.jpg" alt=""></div>
-      <div class="gallery-item"><img src="./images/adron_homes_ILEYA_T-SHIRT_01.jpg" alt=""></div>
-      <div class="gallery-item"><img src="./images/1193057_OSYY8P0.jpg" alt=""></div>
-      <div class="gallery-item"><img src="./images/THEOLOGY SCROLL - Copy.JPG" alt=""></div>
-      <div class="gallery-item"><img src="./images/keyholder.jpg" alt=""></div>
-      <div class="gallery-item"><img src="./images/mug1.png" alt=""></div>
-      <div class="gallery-item"><img src="./images/mug2.png" alt=""></div>
-      <div class="gallery-item"><img src="./images/mug3.png" alt=""></div>
-      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
-      <!-- repeat -->
-      <div class="gallery-item"><img src="./images/Screenshot_20210824-125146.png" alt=""></div>
-      <div class="gallery-item"><img src="./images/THEOLOGY SCROLL - Copy.JPG" alt=""></div>
-      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
-      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
-      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
-      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
-      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
-      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
-      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
-      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+    <div class="gallery-row row2">
+      <div class="gallery-track">
+        <!-- Duplicate the same 10 images twice for seamless loop -->
+        <div class="gallery-item"><img src="./images/award.jpg" alt=""></div>
+        <div class="gallery-item"><img src="./images/adron_homes_ILEYA_T-SHIRT_01.jpg" alt=""></div>
+        <div class="gallery-item"><img src="./images/1193057_OSYY8P0.jpg" alt=""></div>
+        <div class="gallery-item"><img src="./images/THEOLOGY SCROLL - Copy.JPG" alt=""></div>
+        <div class="gallery-item"><img src="./images/keyholder.jpg" alt=""></div>
+        <div class="gallery-item"><img src="./images/mug1.png" alt=""></div>
+        <div class="gallery-item"><img src="./images/mug2.png" alt=""></div>
+        <div class="gallery-item"><img src="./images/mug3.png" alt=""></div>
+        <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+        <!-- repeat -->
+        <div class="gallery-item"><img src="./images/Screenshot_20210824-125146.png" alt=""></div>
+        <div class="gallery-item"><img src="./images/THEOLOGY SCROLL - Copy.JPG" alt=""></div>
+        <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+        <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+        <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+        <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+        <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+        <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+        <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+        <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+      </div>
     </div>
-</div>
 
-<div class="gallery-row row2">
-    <div class="gallery-track-reverse">
-      <!-- Duplicate the same 10 images twice for seamless loop -->
-      <div class="gallery-item"><img src="./images/award.jpg" alt=""></div>
-      <div class="gallery-item"><img src="./images/adron_homes_ILEYA_T-SHIRT_01.jpg" alt=""></div>
-      <div class="gallery-item"><img src="./images/1193057_OSYY8P0.jpg" alt=""></div>
-      <div class="gallery-item"><img src="./images/THEOLOGY SCROLL - Copy.JPG" alt=""></div>
-      <div class="gallery-item"><img src="./images/keyholder.jpg" alt=""></div>
-      <div class="gallery-item"><img src="./images/mug1.png" alt=""></div>
-      <div class="gallery-item"><img src="./images/mug2.png" alt=""></div>
-      <div class="gallery-item"><img src="./images/mug3.png" alt=""></div>
-      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
-      <!-- repeat -->
-      <div class="gallery-item"><img src="./images/Screenshot_20210824-125146.png" alt=""></div>
-      <div class="gallery-item"><img src="./images/THEOLOGY SCROLL - Copy.JPG" alt=""></div>
-      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
-      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
-      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
-      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
-      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
-      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
-      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
-      <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+    <div class="gallery-row row2">
+      <div class="gallery-track-reverse">
+        <!-- Duplicate the same 10 images twice for seamless loop -->
+        <div class="gallery-item"><img src="./images/award.jpg" alt=""></div>
+        <div class="gallery-item"><img src="./images/adron_homes_ILEYA_T-SHIRT_01.jpg" alt=""></div>
+        <div class="gallery-item"><img src="./images/1193057_OSYY8P0.jpg" alt=""></div>
+        <div class="gallery-item"><img src="./images/THEOLOGY SCROLL - Copy.JPG" alt=""></div>
+        <div class="gallery-item"><img src="./images/keyholder.jpg" alt=""></div>
+        <div class="gallery-item"><img src="./images/mug1.png" alt=""></div>
+        <div class="gallery-item"><img src="./images/mug2.png" alt=""></div>
+        <div class="gallery-item"><img src="./images/mug3.png" alt=""></div>
+        <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+        <!-- repeat -->
+        <div class="gallery-item"><img src="./images/Screenshot_20210824-125146.png" alt=""></div>
+        <div class="gallery-item"><img src="./images/THEOLOGY SCROLL - Copy.JPG" alt=""></div>
+        <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+        <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+        <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+        <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+        <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+        <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+        <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+        <div class="gallery-item"><img src="./images/cry_asset3.png" alt=""></div>
+      </div>
     </div>
-</div>
 
-<img src="./images/IMG-20211214-WA0032.jpg" style="max-width: 100%;" />
+    <img src="./images/IMG-20211214-WA0032.jpg" style="max-width: 100%;" />
 
-<k_man>
-<h2 class="heading_crystal">
-    Awards
-</h2>
-<div class="ce">
-    <div class="rounded_card" style="background-image: url(./images/awards2.jpg); background-size: 100% 100%;" >
-    </div>
-    <div class="rounded_card" style="background-image: url(./images/awards3.jpg); background-size: 100% 100%;" >
-    </div>
-    <div class="rounded_card" style="background-image: url(./images/awards4.jpg); background-size: 100% 100%;" >
-        
-    </div>
-    <div class="rounded_card" style="background-image: url(./images/award.jpg); background-size: 100% 100%;" >
-        
-    </div>
-</div>
-<div class="button_con">
-    <div class="button_">
-        MORE &rarr;
-    </div>
-</div>
-<hr>
-</k_man>
+    <k_man">
+      <h2 class="heading_crystal">
+        Awards
+      </h2>
+      <div class="ce">
+        <div class="rounded_card" style="background-image: url(./images/awards2.jpg); background-size: 100% 100%;">
+        </div>
+        <div class="rounded_card" style="background-image: url(./images/awards3.jpg); background-size: 100% 100%;">
+        </div>
+        <div class="rounded_card" style="background-image: url(./images/awards4.jpg); background-size: 100% 100%;">
 
-<k_man>
-<h2 class="heading_crystal">
-    Banners
-</h2>
-<div class="ce">
-    <div class="rounded_card" style="background-image: url(./images/banner.jpg); background-size: 100% 100%;" >
-    </div>
-    <div class="rounded_card" style="background-image: url(./images/banner2.jpg); background-size: 100% 100%;" >
-    </div>
-    <div class="ce">
-        <div class="rounded_card" style="background-image: url(./images/banner3.jpg); 
+        </div>
+        <div class="rounded_card" style="background-image: url(./images/award.jpg); background-size: 100% 100%;">
+
+        </div>
+      </div>
+      <div class="button_con">
+        <div class="button_">
+          MORE &rarr;
+        </div>
+      </div>
+      <hr>
+    </k_man>
+
+    <k_man>
+      <h2 class="heading_crystal">
+        Banners
+      </h2>
+      <div class="ce">
+        <div class="rounded_card" style="background-image: url(./images/banner.jpg); background-size: 100% 100%;">
+        </div>
+        <div class="rounded_card" style="background-image: url(./images/banner2.jpg); background-size: 100% 100%;">
+        </div>
+        <div class="ce">
+          <div class="rounded_card" style="background-image: url(./images/banner3.jpg); 
         width: 300px;
         background-size: 100% 100%;
         height: 130px;"></div>
-    </div>
-</div>
-<div class="button_con">
-    <div class="button_">
-        MORE &rarr;
-    </div>
-</div>
-<hr>
-</k_man>
+        </div>
+      </div>
+      <div class="button_con">
+        <div class="button_">
+          MORE &rarr;
+        </div>
+      </div>
+      <hr>
+    </k_man>
 
-<k_man>
-<h2 class="heading_crystal">
-    Diaries
-</h2>
-<div class="ce">
-    <div class="rounded_card" style="background-image: url(./images/diary.jpg); background-size: 100% 100%;" >
-    </div>
-    <div class="rounded_card" style="background-image: url(./images/diary2.jpg); background-size: 100% 100%;" >
-    </div>
-    <div class="rounded_card" style="background-image: url(./images/diary3.jpg); background-size: 100% 100%;" >
-        
-    </div>
-    <div class="rounded_card" style="background-image: url(./images/diary4.jpg); background-size: 100% 100%;" >
-        
-    </div>
-</div>
-<div class="button_con">
-    <div class="button_">
-        MORE &rarr;
-    </div>
-</div>
-<hr>
-</k_man>
+    <k_man>
+      <h2 class="heading_crystal">
+        Diaries
+      </h2>
+      <div class="ce">
+        <div class="rounded_card" style="background-image: url(./images/diary.jpg); background-size: 100% 100%;">
+        </div>
+        <div class="rounded_card" style="background-image: url(./images/diary2.jpg); background-size: 100% 100%;">
+        </div>
+        <div class="rounded_card" style="background-image: url(./images/diary3.jpg); background-size: 100% 100%;">
 
-<k_man>
-<h2 class="heading_crystal">
-    Shirts
-</h2>
-<div class="ce">
-    <div class="rounded_card" style="background-image: url(./images/shirt.jpg); background-size: 100% 100%;" >
-    </div>
-    <div class="rounded_card" style="background-image: url(./images/shirt2.jpg); background-size: 100% 100%;" >
-    </div>
-    <div class="rounded_card" style="background-image: url(./images/shirt3.jpg); background-size: 100% 100%;" >
-        
-    </div>
-    <div class="rounded_card" style="background-image: url(./images/shirt4.JPG); background-size: 100% 100%;" >
-        
-    </div>
-</div>
-<div class="button_con">
-    <div class="button_">
-        MORE &rarr;
-    </div>
-</div>
-<hr>
-</k_man>
+        </div>
+        <div class="rounded_card" style="background-image: url(./images/diary4.jpg); background-size: 100% 100%;">
 
-<k_man>
-<h2 class="heading_crystal">
-    Keyholders
-</h2>
-<div class="ce">
-    <div class="rounded_card" style="background-image: url(./images/keyholder2.jpg); background-size: 100% 100%;" >
-    </div>
-    <div class="rounded_card" style="background-image: url(./images/keyholder3.jpg); background-size: 100% 100%;" >
-    </div>
-    <div class="ce">
-        <div class="rounded_card" style="background-image: url(./images/keyholder4.jpg); 
+        </div>
+      </div>
+      <div class="button_con">
+        <div class="button_">
+          MORE &rarr;
+        </div>
+      </div>
+      <hr>
+    </k_man>
+
+    <k_man>
+      <h2 class="heading_crystal">
+        Shirts
+      </h2>
+      <div class="ce">
+        <div class="rounded_card" style="background-image: url(./images/shirt.jpg); background-size: 100% 100%;">
+        </div>
+        <div class="rounded_card" style="background-image: url(./images/shirt2.jpg); background-size: 100% 100%;">
+        </div>
+        <div class="rounded_card" style="background-image: url(./images/shirt3.jpg); background-size: 100% 100%;">
+
+        </div>
+        <div class="rounded_card" style="background-image: url(./images/shirt4.JPG); background-size: 100% 100%;">
+
+        </div>
+      </div>
+      <div class="button_con">
+        <div class="button_">
+          MORE &rarr;
+        </div>
+      </div>
+      <hr>
+    </k_man>
+
+    <k_man>
+      <h2 class="heading_crystal">
+        Keyholders
+      </h2>
+      <div class="ce">
+        <div class="rounded_card" style="background-image: url(./images/keyholder2.jpg); background-size: 100% 100%;">
+        </div>
+        <div class="rounded_card" style="background-image: url(./images/keyholder3.jpg); background-size: 100% 100%;">
+        </div>
+        <div class="ce">
+          <div class="rounded_card" style="background-image: url(./images/keyholder4.jpg); 
         width: 300px;
         background-size: 100% 100%;
         height: 170px;"></div>
-    </div>
-    <!-- 
+        </div>
+        <!-- 
     <div class="rounded_card" style="background-image: url(./images/keyholder5.jpg); background-size: 100% 100%;" >
         
     </div>
@@ -601,230 +421,754 @@ padding: 40px;">
         
     </div>
      -->
-</div>
-<div class="button_con">
-    <div class="button_">
-        MORE &rarr;
-    </div>
-</div>
-<hr>
-</k_man>
+      </div>
+      <div class="button_con">
+        <div class="button_">
+          MORE &rarr;
+        </div>
+      </div>
+      <hr>
+    </k_man>
 
-<k_man>
-<h2 class="heading_crystal">
-    Lapel
-</h2>
-<div class="ce">
-    <div class="ce">
-        <div class="rounded_card" style="background-image: url(./images/lapel.JPG); 
+    <k_man>
+      <h2 class="heading_crystal">
+        Lapel
+      </h2>
+      <div class="ce">
+        <div class="ce">
+          <div class="rounded_card" style="background-image: url(./images/lapel.JPG); 
         width: 300px;
         background-size: 100% 100%;
         height: 270px;"></div>
-    </div>
-    <div class="ce">
-        <div class="rounded_card" style="background-image: url(./images/lapel2.jpg); 
+        </div>
+        <div class="ce">
+          <div class="rounded_card" style="background-image: url(./images/lapel2.jpg); 
         width: 300px;
         background-size: 100% 100%;
         height: 270px;"></div>
-    </div>
-</div>
-<div class="button_con">
-    <div class="button_">
-        MORE &rarr;
-    </div>
-</div>
-<hr>
-</k_man>
+        </div>
+      </div>
+      <div class="button_con">
+        <div class="button_">
+          MORE &rarr;
+        </div>
+      </div>
+      <hr>
+    </k_man>
 
-<k_man>
-<h2 class="heading_crystal">
-    Mugs and Cups
-</h2>
-<div class="ce">
-    <div class="ce">
-        <div class="rounded_card" style="background-image: url(./images/mug_and_cup.jpg); 
+    <k_man>
+      <h2 class="heading_crystal">
+        Mugs and Cups
+      </h2>
+      <div class="ce">
+        <div class="ce">
+          <div class="rounded_card" style="background-image: url(./images/mug_and_cup.jpg); 
         width: 300px;
         background-size: 100% 100%;
         height: 200px;"></div>
-    </div>
-    <div class="ce">
-        <div class="rounded_card" style="background-image: url(./images/mug_and_cup2.jpg); 
+        </div>
+        <div class="ce">
+          <div class="rounded_card" style="background-image: url(./images/mug_and_cup2.jpg); 
         width: 300px;
         background-size: 100% 100%;
         height: 250px;"></div>
-    </div>
-</div>
-<div class="button_con">
-    <div class="button_">
-        MORE &rarr;
-    </div>
-</div>
-<hr>
-</k_man>
+        </div>
+      </div>
+      <div class="button_con">
+        <div class="button_">
+          MORE &rarr;
+        </div>
+      </div>
+      <hr>
+    </k_man>
 
-<div class="box_overlay" 
-    style="
+    <div class="box_overlay" style="
         display: inline-block;
         position: relative;
         width: 340px;
         margin: auto;
-        "
->
-    <div class="inside_1" 
-    style="
+        ">
+      <div class="inside_1" style="
         display: inline-block;
         position: absolute;
         width: 240px;
         right: 0;
         "></div>
 
-</div>
+    </div>
 
-<div id="ratolf_footer">
-    <footer class="" style="background:#0d1630;
+  </div>
+  <footer class="mobile" style="background:#0d1630;
 width: 100%; margin: auto;  text-align: center;color:#fff;
 font-family: the_font;">
 
-        <div style="width: 80%;margin:auto;padding:30px 0;text-align: left;line-height: 130%;font-size: 18px;">
-            
-            <div class="half_div">
-                <div class="footer_heading">Services</div>
+      <div style="width: 80%;margin:auto;padding:30px 0;text-align: left;line-height: 130%;font-size: 18px;">
+          
+          <div class="half_div">
+              <div class="footer_heading">Services</div>
 
-                <div class="bull"></div>General Printing <br>
-                <div class="bull"></div>Branding <br>
-                <div class="bull"></div>Customized Items<br>
-                <div class="bull"></div>Corporate <br>
-                <div class="bull"></div>Consultancy
+              <div class="bull"></div>General Printing <br>
+              <div class="bull"></div>Branding <br>
+              <div class="bull"></div>Customized Items<br>
+              <div class="bull"></div>Corporate <br>
+              <div class="bull"></div>Consultancy
 
-            </div>
-            <div class="half_div">
-                <div class="footer_heading">Past Projects</div>
-                <!--  
-        <table>
-            <tr>
-                <td><div class="bull"></div></td>
-                <td>App for Co-operative Society</td>
-            </tr>
-            <tr>
-                <td><div class="bull"></div></td>
-                <td>Biology App (The backend)</td>
-            </tr>
-            <tr>
-                <td><div class="bull"></div></td>
-                <td>4 pic, 1 word</td>
-            </tr>
-            <tr>
-                <td><div class="bull"></div></td>
-                <td>MGS concept (binary system)</td>
-            </tr>
-            <tr>
-                <td><div class="bull"></div></td>
-                <td>The Mathium</td>
-            </tr>
-        </table>
-        -->
+          </div>
+          <div class="half_div">
+              <div class="footer_heading">Past Projects</div>
+              <!--  
+      <table>
+          <tr>
+              <td><div class="bull"></div></td>
+              <td>App for Co-operative Society</td>
+          </tr>
+          <tr>
+              <td><div class="bull"></div></td>
+              <td>Biology App (The backend)</td>
+          </tr>
+          <tr>
+              <td><div class="bull"></div></td>
+              <td>4 pic, 1 word</td>
+          </tr>
+          <tr>
+              <td><div class="bull"></div></td>
+              <td>MGS concept (binary system)</td>
+          </tr>
+          <tr>
+              <td><div class="bull"></div></td>
+              <td>The Mathium</td>
+          </tr>
+      </table>
+      -->
 
-                <div class="bull"></div>Dangote Signages <br>
-                <div class="bull"></div>Microsoft Calender <br>
-                <div class="bull"></div>Zenith Bank KeyHolder <br>
-                <div class="bull"></div>Customized Mugs and Cups <br>
-                <div class="bull"></div>Customized T-shirts
+              <div class="bull"></div>Dangote Signages <br>
+              <div class="bull"></div>Microsoft Calender <br>
+              <div class="bull"></div>Zenith Bank KeyHolder <br>
+              <div class="bull"></div>Customized Mugs and Cups <br>
+              <div class="bull"></div>Customized T-shirts
 
-            </div>
-            <div class="half_div">
-                <div class="footer_heading">Contact</div>
+          </div>
+          <div class="half_div">
+              <div class="footer_heading">Contact</div>
 
-                <a href="#">
-                    <img class="icon" src="./images/icon_play.png"> Youtube
-                </a>
-                <br>
-                <a href="#">
-                    <img class="icon" src="./images/iconFacebook.png"> Facebook
-                </a>
-                <br>
-                <a href="#">
-                    <img class="icon" src="./images/iconInstagram.png"> Instagram
-                </a>
-                <br>
-                <a href="#">
-                    <img class="icon" src="./images/iconTwitter.png"> Twitter
-                </a>
-                <br>
-                <a href="https://wa.me/+2348033477477">
-                    <img class="icon" src="./images/icon_wh.png"> +2348033477477
-                </a>
+              <a href="#">
+                  <img class="icon" src="./images/icon_play.png"> Youtube
+              </a>
+              <br>
+              <a href="#">
+                  <img class="icon" src="./images/iconFacebook.png"> Facebook
+              </a>
+              <br>
+              <a href="#">
+                  <img class="icon" src="./images/iconInstagram.png"> Instagram
+              </a>
+              <br>
+              <a href="#">
+                  <img class="icon" src="./images/iconTwitter.png"> Twitter
+              </a>
+              <br>
+              <a href="https://wa.me/+2348033477477">
+                  <img class="icon" src="./images/icon_wh.png"> +2348033477477
+              </a>
 
-            </div>
-        </div>
+          </div>
+      </div>
 
-        <div class="ff ce" style="background: orangered;color:#fff;padding: 30px;">
-            ©Crystal Animation
-        </div>
-    </footer>
+      <div class="ff ce" style="background: orangered;color:#fff;padding: 30px;">
+          ©Crystal Animation
+      </div>
+  </footer>
 
-    <div id="myNav" class="overlay" style="">
-        <div class="closebtn close3" onclick="closeNav()">×</div> <img class="coI" src="./imageS/logo_cr.jpg" style="width:200px; margin:10px auto;">
-        <div class="overlay-content"> 
-            <a href="./index.html">
-                <div class="menu1">
-                    <div class="bull"></div>HOME
-                </div>
+  <div class="desktop">
+
+    <div class="desktop nav_away" style="background-color: #2e2a2a;
+padding:7px 25px;background-size: cover; background-position: center; background-repeat: no-repeat;">
+      <img id="logo" src="images/logo_cr.jpg" alt="Logo">
+      <div style="float: right;font-family: the_font;">
+        <ul>
+          <a href="./index.html">
+            <li id="home">HOME <!--
+        <div id="home_drop" class="dd">
+            <div class="dd_menu">- Story Behind</div>
+            <div class="dd_menu">- Save</div>
+            <div class="dd_menu">- Our Latest Activities</div>
+            <div class="dd_menu">- Acount</div>
+        </div>-->
+            </li>
+          </a>
+
+          <li id="about">
+            <a href="./about.html#about_us"> ABOUT </a>
+            <div id="about_drop" class="dd">
+              <a href="./about.html#about_us">
+                <div class="dd_menu">- About Us</div>
+              </a>
+              <a href="./about.html#purpose">
+                <div class="dd_menu">- Our Purpose</div>
+              </a>
+              <!--
+            <a href="./about.html#">
+                <div class="dd_menu">- Our Mission</div>
             </a>
-            <a href="./about.html">
-                <div class="menu1" onclick="">
-                    <div class="bull"></div>ABOUT US
-                </div>
-            </a>
-            <a href="#">
-                <div class="menu1">
-                    <div class="bull"></div>CONTACT US
-                </div>
-            </a>
-            <div class="menu1">
-                <div class="bull"></div>MEDIA
+                <div class="dd_menu">- Our Vision</div>
+            -->
+              <a href="./about.html#support">
+                <div class="dd_menu">- Our Support Areas</div>
+              </a>
+              <a href="./about.html#commitment">
+                <div class="dd_menu">- Our Commitments</div>
+              </a>
+
             </div>
-        </div>
+          </li>
+
+          <a href="./project.html">
+            <li id="team">PROJECT
+              <div id="team_drop" class="dd">
+                <div class="dd_menu">- Current Project</div>
+                <div class="dd_menu">- Completed Project</div>
+              </div>
+            </li>
+          </a>
+
+
+          <a href="./contact.html">
+            <li>CONTACT</li>
+          </a>
+        </ul>
+      </div>
+
     </div>
 
-    <div class="overlay2" onclick="closeNav()"></div>
-</div>
-</body>
-<script type="text/javascript">
-    
+    <div style="font-size: 40px;">
 
-var old='';oldx='';
-function openNav() {
-  document.getElementById("myNav").style.width = "75vw";
-  document.getElementsByClassName('overlay2')[0].style.display='block';
-}
+      
+    </div>
 
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-  document.getElementsByClassName('overlay2')[0].style.display='none';
-}
-</script>
-<!-- 
+    <div class="desktop hero_section" style="
+  background-color: #eee;
+  height: 300px;
+  text-align: center;
+  ">
+
+      <div class="slidis" style="margin: auto;">
+        <img id="cro1" src="./images/crystal_machine.png" alt="machine" style="width: 350px;height: 300px;
+          vertical-align: top;
+          ">
+        <div style="display: inline-block;padding-left: 100px;max-width: 500px;padding-top:25px;text-align: left;">
+          <div id="cro2" style="color:#ff00ff; font-size: 35px;font-weight: bolder;">
+            HIGH QUALITY
+          </div>
+          <div id="cro3" style="color:rgb(40, 141, 243); font-size: 35px;font-weight: bolder;">
+            PRINTING SERVICES
+          </div>
+          <div id="cro4" style="margin-top: 10px;max-width: 310px;font-size: 20px;">
+            We believe in responsible printing practices and strive to minimize our environmental footprint through
+            eco-friendly materials and processes.
+          </div>
+        </div>
+      </div>
+      <div class="slidis" style="
+     background-image: url('./images/crystal\ animation_slide_sample2.png');
+     background-size: contain;
+     margin: auto;
+     background-repeat: no-repeat;
+     background-position: center;
+     "></div>
+
+      <div id="s_4" class="slidis" style="margin: auto;background-color: #591db3;">
+        <div style="height: 300px;
+         position: absolute;
+         right: 300px;
+         ">
+          <img id="cro1" src="./images/crystal animation_slide_dairy.png" alt="machine"
+            style="height: 302px;margin-top: -1px;">
+        </div>
+        <div style="position: absolute;left: 300px;">
+          <div style="
+               display: inline-block;max-width: 500px;padding:20px;text-align: left;
+               background-color: #fff;
+               box-shadow: 2px 2px 6px #666666;
+               margin-top: 30px;
+             ">
+            <div id="cr4_2" style="color:#591db3; font-size: 30px;font-weight: bolder;">
+              BRANDING
+            </div>
+            <div id="cr4_4" style="margin: 10px 0;max-width: 310px;font-size: 16px;">
+              Our expert team is dedicated to crafting compelling branding solutions that stand out in today's
+              competitive
+              market. Whether you're looking to refresh your brand identity or create a new one from scratch, we've got
+              you covered.
+            </div>
+            <div id="cro3" style="background-color:#591db3;color: #fff; font-size: 20px;font-weight: bolder;
+                 display: inline-block;
+                 padding: 10px;
+                 ">
+              More
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="s_5" class="slidis" style="margin: auto;background-color: #efe9e9;">
+        <img id="s_5x1" src="./images/crystal animation_slide5x1.png" alt="machine"
+          style="width:50%;height: 302px;position: absolute;left:0">
+        <div id="s_5x2" style="
+             display: inline-block;max-width: 500px;padding:20px;text-align: left;
+             margin-top: 30px;
+             position: absolute;
+             left: 18%;
+         ">
+          <div id="s_5x3" style="color:#fff; font-size: 30px;font-weight: bolder;">
+            GIFT ITEMS
+          </div>
+          <div id="s_5x4" style="margin: 10px 0;max-width: 310px;font-size: 16px;color:#efe9e9">
+            With a focus on creativity, quality, and exceptional customer service, we go above and beyond to bring your
+            vision to life. Trust us to deliver unmatched results that exceed your expectations.
+          </div>
+          <div style="background-color:#f89e2c;color: #fff; font-size: 20px;
+             display: inline-block;
+             padding: 10px;
+             ">
+            More
+          </div>
+        </div>
+        <div style="height: 300px;
+         position: relative;
+         max-width: 930px;
+         text-align: left;
+         ">
+          <div style="margin-left: -3px;">
+            <div style="text-align: right;">
+              <img id="cr5_1" src="./images/crystal animation_slide5.png" alt="machine" style="height: 302px;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="big_container">
+      <div class="grid_2_3">
+        <img src="./images/we_print.jpg" class="that_img" >
+        <div class="txt_con" style="background-image: url('./images/yel.jpg');">
+          <div class="le" style="margin:10px 0 20px 0;font-size: 35px;">
+            Welcome
+          </div>
+          <div class="txt">
+            At Crystal Animation, we blend creativity with precision to bring your visions to life. As a premier
+            printing
+            company, we specialize in delivering top-notch printing solutions tailored to meet your needs, whether
+            personal or professional. From business cards to banners, invitations to promotional materials, we're your
+            one-stop destination for all things print.
+          </div>
+        </div>
+      </div>
+
+      <div class="grid_2_3" style="grid-template-rows: 300px;">
+        <div class="le" style="background-image: url('./images/crystal\ animation_m_slide4_mirror.png');background-repeat: no-repeat;background-size: cover;
+        font-size: 70px;font-weight: bolder;padding: 80px;color: #fff;text-shadow: 2px 2px 9px #2e2a2a;
+        ">
+          OUR <br>SERVICES
+        </div>
+
+        <div class="txt_con" style="background-color:#05055f;color: yellow; 
+      display: grid;align-items: center;">
+          <div class="txt">
+
+            Our expert team is dedicated to crafting compelling branding solutions that stand out in today's competitive
+            market. Whether you're looking to refresh your brand identity or create a new one from scratch, we've got
+            you
+            covered.
+
+          </div>
+        </div>
+      </div>
+
+      <div class="grid_2_3">
+
+        <div class="txt_con" style=" 
+      display: grid;align-items: center;">
+          <div class="txt">
+
+            <span class="drop_cap">A</span>t <strong class="that_purple"> Crystal Animation</strong>, we specialize in
+            high-quality branding and printing solutions designed to elevate your business identity. From customized
+            <strong class="that_purple">T-shirts </strong> and <strong class="that_purple"> car branding </strong> to
+            <strong class="that_purple"> award plaques </strong> and <strong class="that_purple"> 3D dome stickers
+            </strong>, we turn your ideas into eye-catching realities.
+
+          </div>
+        </div>
+        <div>
+          <img src="./images/cry_asset3.png">
+        </div>
+      </div>
+
+      <div class="grid_2_3">
+        <div>
+          <img src="./images/cry_asset4.png" style="max-width: 100%;">
+        </div>
+
+        <div class="txt_con" style=" 
+      display: grid;align-items: center;">
+          <div class="txt">
+
+            <span class="drop_cap">W</span>hether you're a startup, a corporate organization, or planning an event, our
+            creative touch and professional finish will set your brand apart. Let’s help you <strong
+              class="that_purple">make a lasting impression</strong>.
+
+          </div>
+        </div>
+      </div>
+
+      <div class="grid_2_3">
+        <div>
+          <img src="./images/elevate.png">
+        </div>
+
+        <div class="txt_con" style=" 
+      display: grid;align-items: center;">
+
+          <div>
+            <div class="ce manage">
+              <div class="rounded_card">
+                <img src="./images/mug3.png" class="image_in_rounded_card2">
+              </div>
+              <div class="rounded_card">
+                <img src="./images/adron_homes_ILEYA_T-SHIRT_01.jpg" class="image_in_rounded_card2">
+              </div>
+              <div class="rounded_card"
+                style="background-image: url(./images/keyholder.jpg); background-size: 100% 100%;">
+
+              </div>
+              <div class="rounded_card" style="background-image: url(./images/award.jpg); background-size: 100% 100%;">
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="grid_2_3">
+        <div>
+          <img src="./images/elevate2.png">
+        </div>
+
+        <div class="txt_con" style=" 
+      display: grid;align-items: center;">
+
+          <img src="./images/IMG-20211214-WA0032.jpg" style="max-width: 100%;">
+
+        </div>
+      </div>
+
+      <div class="grid_2_3">
+        <k_man class="manage_this">
+          <h2 class="heading_crystal">
+            Awards
+          </h2>
+          <div class="ce">
+            <div class="rounded_card" style="background-image: url(./images/awards2.jpg); background-size: 100% 100%;">
+            </div>
+            <div class="rounded_card" style="background-image: url(./images/awards3.jpg); background-size: 100% 100%;">
+            </div>
+            <div class="rounded_card" style="background-image: url(./images/awards4.jpg); background-size: 100% 100%;">
+
+            </div>
+            <div class="rounded_card" style="background-image: url(./images/award.jpg); background-size: 100% 100%;">
+
+            </div>
+          </div>
+          <div class="button_con">
+            <div class="button_">
+              MORE →
+            </div>
+          </div>
+          <hr>
+        </k_man>
+
+        <k_man>
+          <h2 class="heading_crystal">
+            Banners
+          </h2>
+          <div class="ce manage">
+            <div class="rounded_card" style="background-image: url(./images/banner.jpg); background-size: 100% 100%;">
+            </div>
+            <div class="rounded_card" style="background-image: url(./images/banner2.jpg); background-size: 100% 100%;">
+            </div>
+            <div class="ce">
+              <div class="rounded_card" style="background-image: url(./images/banner3.jpg); 
+                  width: 500px;
+                  background-size: 100% 100%;
+                  height: 230px;"></div>
+            </div>
+          </div>
+          <div class="button_con">
+            <div class="button_">
+              MORE →
+            </div>
+          </div>
+        </k_man>
+      </div>
+
+      <div class="grid_1_1 manage">
+        <k_man>
+          <h2 class="heading_crystal">
+            Diaries
+          </h2>
+          <div class="ce">
+            <div class="rounded_card" style="background-image: url(./images/diary.jpg); background-size: 100% 100%;">
+            </div>
+            <div class="rounded_card" style="background-image: url(./images/diary2.jpg); background-size: 100% 100%;">
+            </div>
+            <div class="rounded_card" style="background-image: url(./images/diary3.jpg); background-size: 100% 100%;">
+
+            </div>
+            <div class="rounded_card" style="background-image: url(./images/diary4.jpg); background-size: 100% 100%;">
+
+            </div>
+          </div>
+          <div class="button_con">
+            <div class="button_">
+              MORE →
+            </div>
+          </div>
+          <hr>
+        </k_man>
+
+        <k_man>
+          <h2 class="heading_crystal">
+            Shirts
+          </h2>
+          <div class="ce">
+            <div class="rounded_card" style="background-image: url(./images/shirt.jpg); background-size: 100% 100%;">
+            </div>
+            <div class="rounded_card" style="background-image: url(./images/shirt2.jpg); background-size: 100% 100%;">
+            </div>
+            <div class="rounded_card" style="background-image: url(./images/shirt3.jpg); background-size: 100% 100%;">
+
+            </div>
+            <div class="rounded_card" style="background-image: url(./images/shirt4.JPG); background-size: 100% 100%;">
+
+            </div>
+          </div>
+          <div class="button_con">
+            <div class="button_">
+              MORE →
+            </div>
+          </div>
+          <hr>
+        </k_man>
+      </div>
+
+      <div class="grid_1_2">
+        <k_man>
+          <h2 class="heading_crystal">
+            Keyholders
+          </h2>
+          <div class="ce manage_another">
+            <div class="rounded_card"
+              style="background-image: url(./images/keyholder2.jpg); background-size: 100% 100%;">
+            </div>
+            <div class="rounded_card"
+              style="background-image: url(./images/keyholder3.jpg); background-size: 100% 100%;">
+            </div>
+            <div class="ce">
+              <div class="rounded_card" style="background-image: url(./images/keyholder4.jpg); 
+                width: 300px;
+                background-size: 100% 100%;
+                height: 170px;"></div>
+            </div>
+            <!-- 
+            <div class="rounded_card" style="background-image: url(./images/keyholder5.jpg); background-size: 100% 100%;" >
+                
+            </div>
+            <div class="rounded_card" style="background-image: url(./images/keyholder6.jpg); background-size: 100% 100%;" >
+                
+            </div>
+             -->
+          </div>
+        </k_man>
+        <k_man class="grid_1_1" style="grid-template-rows: 85px;">
+          <h2 class="heading_crystal" style="grid-column-start: 1;grid-column-end: 3;">
+            Lapel
+          </h2>
+          <div class="ce take_space">
+            <div class="ce">
+              <div class="rounded_card" style="background-image: url(./images/lapel.JPG); 
+                width: 300px;
+                background-size: 100% 100%;
+                height: 270px;"></div>
+            </div>
+          </div>
+          <div class="ce">
+            <div class="rounded_card" style="background-image: url(./images/lapel2.jpg); 
+                width: 300px;
+                background-size: 100% 100%;
+                height: 270px;"></div>
+          </div>
+        </k_man>
+
+      </div>
+
+      <div class="ce grid">
+        <h2 class="heading_crystal">
+          Mugs and Cups
+        </h2>
+        <img src="./images/mug_and_cup.jpg" alt="">
+        <img src="./images/mug_and_cup2.jpg" alt="">
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="desktop" style="background:#0d1630;
+  width: 100%; margin: auto;  text-align: center;color:#fff;
+  font-family: the_font;">
+
+    <div style="display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, auto));
+  grid-template-rows: minmax(150px, auto);
+  justify-content: space-evenly;text-align: left;padding: 50px 0;">
+      <div class="grey_box">
+        <div class="footer_heading">Services</div>
+        <ul>
+          <li><span class="grey_inn">General Printing </span></li>
+          <li><span class="grey_inn">Branding </span></li>
+          <li><span class="grey_inn">Customized Items</span></li>
+          <li><span class="grey_inn">Corporate </span></li>
+          <li><span class="grey_inn">Consultancy </span></li>
+        </ul>
+      </div>
+      <div class="grey_box">
+        <div class="footer_heading">Past Projects</div>
+        <ul>
+          <li><span class="grey_inn">Dangote Signages </span></li>
+          <li><span class="grey_inn">Microsoft Calender </span></li>
+          <li><span class="grey_inn">Zenith Bank KeyHolder </span></li>
+          <li><span class="grey_inn">Customized Mugs and Cups </span></li>
+          <li><span class="grey_inn">Customized T-shirts</span></li>
+        </ul>
+      </div>
+      <div class="grey_box">
+
+        <div class="footer_heading">Contact</div>
+
+        <a href="#">
+          <img class="icon" src="./images/icon_play.png"> Youtube
+        </a>
+        <br>
+        <a href="#">
+          <img class="icon" src="./images/iconFacebook.png"> Facebook
+        </a>
+        <br>
+        <a href="#">
+          <img class="icon" src="./images/iconInstagram.png"> Instagram
+        </a>
+        <br>
+        <a href="#">
+          <img class="icon" src="./images/iconTwitter.png"> Twitter
+        </a>
+        <br>
+        <a href="https://wa.me/+2348033477477">
+          <img class="icon" src="./images/icon_wh.png"> +2348033477477
+        </a>
+
+      </div>
+    </div>
+
+    <div class="ff ce" style="background: orangered;color:#fff;padding: 30px;">
+      ©Crystal Animation
+    </div>
+  </footer>
+  <script type="text/javascript">
+
+
+    var old = ''; oldx = '';
+    function openNav() {
+      document.getElementById("myNav").style.width = "75vw";
+      document.getElementsByClassName('overlay2')[0].style.display = 'block';
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+      document.getElementsByClassName('overlay2')[0].style.display = 'none';
+    }
+  </script>
+  <!-- 
 <script type="text/javascript" src="./js/header.js"></script>
 <script type="text/javascript" src="./js/footer.js"></script> 
 -->
 
-<script src="./js/jq.js"></script>
-<script src="js/slider_top.js"></script>
-<script src="js/slider_top_mobile.js"></script>
-<script src="./js/story.js"></script>
-<script src="./js/jquery.flipster.min.js"></script>
-<!-- 
+  <script src="./js/jq.js"></script>
+  <script src="js/slider_top.js"></script>
+  <script src="js/slider_top_mobile.js"></script>
+  <script src="./js/story.js"></script>
+  <script src="./js/jquery.flipster.min.js"></script>
+  <!-- 
 <script src="./js/form.js"></script> 
 -->
 
-<script>
-	$('.carousel').flipster({
-		style:'carousel',
-		spacing:-0.3,
-		autoplay:3000,
-		pauseOnHover: true,
-		loop:true
-	});
-	//math tricks
-</script>
+  <script>
+    $('.carousel').flipster({
+      style: 'carousel',
+      spacing: -0.3,
+      autoplay: 3000,
+      pauseOnHover: true,
+      loop: true
+    });
+    //math tricks
+
+
+    document.getElementsByClassName('slidis')[0].style.display = 'block';
+
+    function fadeOutRAF(el, duration = 500, onFinish) {
+      if (!el) return;
+      const start = performance.now();
+      const startOpacity = parseFloat(getComputedStyle(el).opacity) || 1;
+
+      function step(now) {
+        const elapsed = now - start;
+        const t = Math.min(elapsed / duration, 1); // 0..1
+        el.style.opacity = String(startOpacity * (1 - t));
+        if (t < 1) {
+          requestAnimationFrame(step);
+        } else {
+          el.style.opacity = '0';
+          if (typeof onFinish === 'function') onFinish();
+        }
+      }
+      requestAnimationFrame(step);
+    }
+
+    var ele = document.getElementsByClassName('slidis');
+    var turn = 0;
+    function fade_it() {
+      ele[turn].style.display = 'block';
+      ele[turn].style.zIndex = '2';
+      let div_1 = ele[turn];
+      console.log(turn);
+      turn2 = turn + 1;
+
+      if (turn2 == ele.length) { turn2 = 0; }
+      ele[turn2].style.display = 'block';
+      ele[turn2].style.zIndex = '1';
+      ele[turn2].style.opacity = '1';
+      console.log(turn2);
+
+      fadeOutRAF(div_1, 1200, () => {
+        console.log('RAF fade finished');
+        div_1.style.display = 'none';
+        setTimeout(() => { fade_it(); }, 3000);
+      });
+
+      turn++;
+      if (turn == ele.length) { turn = 0; }
+    }
+    fade_it();
+  </script>
+</body>
+
 </html>

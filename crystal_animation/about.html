@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Crystal Animation | Branding & Printing Company</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/mobile.css">
+  <link rel="stylesheet" href="./css/jquery.flipster.min.css">
+  <link rel="stylesheet" href="./css/form.css">
+  <link rel="stylesheet" href="./css/profile2.css" />
+  <link rel="stylesheet" href="./css/profile2-mobile.css" />
   <link rel="stylesheet" href="./css/about.css">
+  <link rel="stylesheet" href="./css/grid.css">
   <style>
     * {
       box-sizing: border-box;
@@ -12,46 +20,60 @@
       padding: 0;
       font-family: Arial, sans-serif;
     }
+
     body {
       line-height: 1.6;
       background-color: #f7f7f7;
       color: #333;
     }
+
+    .hero_section {
+      display: block;
+    }
+
     header {
       background-color: #0d47a1;
       color: #fff;
       padding: 20px;
       text-align: center;
     }
+
     nav {
       background: #1976d2;
       text-align: center;
     }
+
     nav a {
       color: white;
       text-decoration: none;
       padding: 15px 20px;
       display: inline-block;
     }
+
     nav a:hover {
       background: #0d47a1;
     }
+
     .container {
       padding: 20px 20px 0;
       max-width: 1000px;
       margin: auto;
     }
+
     section {
       margin-bottom: 40px;
     }
+
     h2 {
       color: #0d47a1;
       margin-bottom: 10px;
     }
+
     ul {
       margin-left: 20px;
       list-style-type: disc;
     }
+
     .cta {
       background: #1976d2;
       color: white;
@@ -60,6 +82,7 @@
       margin-top: 30px;
       border-radius: 5px;
     }
+
     footer {
       background-color: #0d47a1;
       color: white;
@@ -67,6 +90,7 @@
       padding: 20px;
       margin-top: 30px;
     }
+
     @media (max-width: 600px) {
       nav a {
         display: block;
@@ -75,9 +99,70 @@
     }
   </style>
 </head>
+
 <body>
 
-  <header>
+
+  <div class="desktop nav_away" style="background-color: #2e2a2a;
+padding:7px 25px;background-size: cover; background-position: center; background-repeat: no-repeat;">
+    <img id="logo" src="images/logo_cr.jpg" alt="Logo">
+    <div style="float: right;font-family: the_font;">
+      <ul>
+        <a href="./index.html">
+          <li id="home">HOME <!--
+        <div id="home_drop" class="dd">
+            <div class="dd_menu">- Story Behind</div>
+            <div class="dd_menu">- Save</div>
+            <div class="dd_menu">- Our Latest Activities</div>
+            <div class="dd_menu">- Acount</div>
+        </div>-->
+          </li>
+        </a>
+
+        <li id="about">
+          <a href="./about.html#about_us"> ABOUT </a>
+          <div id="about_drop" class="dd">
+            <a href="./about.html#about_us">
+              <div class="dd_menu">- About Us</div>
+            </a>
+            <a href="./about.html#purpose">
+              <div class="dd_menu">- Our Purpose</div>
+            </a>
+            <!--
+            <a href="./about.html#">
+                <div class="dd_menu">- Our Mission</div>
+            </a>
+                <div class="dd_menu">- Our Vision</div>
+            -->
+            <a href="./about.html#support">
+              <div class="dd_menu">- Our Support Areas</div>
+            </a>
+            <a href="./about.html#commitment">
+              <div class="dd_menu">- Our Commitments</div>
+            </a>
+
+          </div>
+        </li>
+
+        <a href="./project.html">
+          <li id="team">PROJECT
+            <div id="team_drop" class="dd">
+              <div class="dd_menu">- Current Project</div>
+              <div class="dd_menu">- Completed Project</div>
+            </div>
+          </li>
+        </a>
+
+
+        <a href="./contact.html">
+          <li>CONTACT</li>
+        </a>
+      </ul>
+    </div>
+
+  </div>
+
+  <header class="mobile">
     <h1>Crystal Animation</h1>
     <p>Bringing Your Brand to Life!</p>
   </header>
@@ -88,166 +173,212 @@
   width:vw;
   overflow:hidden;
   text-align:center;
-" >
+">
 
-<div id="myDIV" style="overflow:hidden;
+    <div id="myDIV" style="overflow:hidden;
   height:350px;
 opacity:0.3;
 position:relative;">
-  <div id="sleed" style="width: 400%;">
-<div style="display: inline-block;">
-<img class="ww" src="./images/award.jpg">
-<img class="ww" src="./images/banner.jpg">
-<img class="ww" src="./images/crystal animation_slide5.png">
-<img class="ww" src="./images/diary.jpg">
-<img class="ww" src="./images/keyholder.jpg">
-<img class="ww" src="./images/adron_homes_ILEYA_T-SHIRT_01.jpg">
-<img class="ww" src="./images/1193057_OSYY8P0.jpg">
-<img class="ww" src="./images/awards2.jpg">
-<img class="ww" src="./images/awards3.jpg">
-<img class="ww" src="./images/cry_asset3.png">
-<img class="ww" src="./images/mug2.png">
-<img class="ww" src="./images/mug_and_cup.jpg">
-</div>
+      <div id="sleed" style="width: 400%;">
+        <div style="display: inline-block;">
+          <img class="ww" src="./images/award.jpg">
+          <img class="ww" src="./images/banner.jpg">
+          <img class="ww" src="./images/crystal animation_slide5.png">
+          <img class="ww" src="./images/diary.jpg">
+          <img class="ww" src="./images/keyholder.jpg">
+          <img class="ww" src="./images/adron_homes_ILEYA_T-SHIRT_01.jpg">
+          <img class="ww" src="./images/1193057_OSYY8P0.jpg">
+          <img class="ww" src="./images/awards2.jpg">
+          <img class="ww" src="./images/awards3.jpg">
+          <img class="ww" src="./images/cry_asset3.png">
+          <img class="ww" src="./images/mug2.png">
+          <img class="ww" src="./images/mug_and_cup.jpg">
+        </div>
+      </div>
+    </div>
+
+    <div id="about_">ABOUT US</div>
+
   </div>
-</div>
 
-<div id="about_" >ABOUT US</div>
-
-</div>
-
-  <nav>
+  <nav class="mobile">
     <a href="#about">About</a>
     <a href="#services">Services</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <img src="./images/we_print.jpg" style="max-width: 100%;" />
+
 
   <div class="container">
 
-    <section id="about">
-      <h2>About Us</h2>
-      <p><strong>Crystal Animation</strong> is your trusted partner for high-quality branding and printing services. We specialize in promotional and corporate items that make your business stand out. With a focus on creativity, quality, and customer satisfaction, we help businesses bring their brand stories to life through expertly crafted products.</p>
+    <div class="desktop">
+      <div class="grid_2_3">
+        <img src="./images/we_print.jpg" style="width: 400px;
+height: 100%;">
 
-      <p><strong>Why Choose Us?</strong></p>
-      <ul>
-        <li>Premium-Quality Materials</li>
-        <li>Fast Turnaround Time</li>
-        <li>Affordable Pricing</li>
-        <li>Custom Designs</li>
-        <li>Nationwide Delivery</li>
-      </ul>
-    </section>
+        <section id="about" class="txt_con">
+          <h2 class="le" style="margin:10px 0 20px 0;font-size: 35px;">
+            About Us
+          </h2>
+          <p><strong>Crystal Animation</strong> is your trusted partner for high-quality branding and printing
+            services.
+            We specialize in promotional and corporate items that make your business stand out. With a focus on
+            creativity, quality, and customer satisfaction, we help businesses bring their brand stories to life
+            through
+            expertly crafted products.</p>
 
-    <img src="./images/we-print2.jpg" style="max-width: 100%;" />
+          <p><strong>Why Choose Us?</strong></p>
+          <ul>
+            <li>Premium-Quality Materials</li>
+            <li>Fast Turnaround Time</li>
+            <li>Affordable Pricing</li>
+            <li>Custom Designs</li>
+            <li>Nationwide Delivery</li>
+          </ul>
+        </section>
 
-    <section id="services">
-      <h2>Our Services</h2>
+      </div>
+    </div>
 
-      <h3>Corporate & Promotional Branding</h3>
-      <ul>
-        <li>T-shirt branding</li>
-        <li>Cap and Polo customization</li>
-        <li>Staff uniforms</li>
-      </ul>
+    <div class="mobile">
 
-      <h3>Vehicle & Outdoor Branding</h3>
-      <ul>
-        <li>Car wraps and branding</li>
-        <li>Bus and van signage</li>
-        <li>Roadside banners</li>
-      </ul>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-      <h3>Branded Accessories</h3>
-      <ul>
-        <li>Keyrings & keyholders</li>
-        <li>Name-tags & badges</li>
-        <li>Lapel pins</li>
-      </ul>
+      <img src="./images/we_print.jpg" style="max-width: 100%;" />
 
-      <h3>Awards & Recognition</h3>
-      <ul>
-        <li>Custom award plaques</li>
-        <li>Glass and wooden trophies</li>
-        <li>Certificate printing</li>
-      </ul>
+      <div class="container">
 
-      <h3>Creative Stickers & Labels</h3>
-      <ul>
-        <li>3D dome stickers</li>
-        <li>Product labels</li>
-        <li>Custom branding</li>
-      </ul>
+        <section id="about">
+          <h2>About Us</h2>
+          <p><strong>Crystal Animation</strong> is your trusted partner for high-quality branding and printing services.
+            We specialize in promotional and corporate items that make your business stand out. With a focus on
+            creativity, quality, and customer satisfaction, we help businesses bring their brand stories to life through
+            expertly crafted products.</p>
 
-      <h3>General Printing</h3>
-      <ul>
-        <li>Flyers, posters & banners</li>
-        <li>Business cards & letterheads</li>
-        <li>Company profiles & brochures</li>
-      </ul>
-    </section>
+          <p><strong>Why Choose Us?</strong></p>
+          <ul>
+            <li>Premium-Quality Materials</li>
+            <li>Fast Turnaround Time</li>
+            <li>Affordable Pricing</li>
+            <li>Custom Designs</li>
+            <li>Nationwide Delivery</li>
+          </ul>
+        </section>
+      </div>
+</div>
 
-    <img src="./images/chat-3d.jpg" style="max-width: 100%;" />
-    <br>
-    <img src="./images/modern-flowing.jpg" style="max-width: 100%;position: absolute;
+      <img src="./images/we-print2.jpg" style="max-width: 100%;" />
+
+      <section id="services">
+        <h2>Our Services</h2>
+
+        <h3>Corporate & Promotional Branding</h3>
+        <ul>
+          <li>T-shirt branding</li>
+          <li>Cap and Polo customization</li>
+          <li>Staff uniforms</li>
+        </ul>
+
+        <h3>Vehicle & Outdoor Branding</h3>
+        <ul>
+          <li>Car wraps and branding</li>
+          <li>Bus and van signage</li>
+          <li>Roadside banners</li>
+        </ul>
+
+        <h3>Branded Accessories</h3>
+        <ul>
+          <li>Keyrings & keyholders</li>
+          <li>Name-tags & badges</li>
+          <li>Lapel pins</li>
+        </ul>
+
+        <h3>Awards & Recognition</h3>
+        <ul>
+          <li>Custom award plaques</li>
+          <li>Glass and wooden trophies</li>
+          <li>Certificate printing</li>
+        </ul>
+
+        <h3>Creative Stickers & Labels</h3>
+        <ul>
+          <li>3D dome stickers</li>
+          <li>Product labels</li>
+          <li>Custom branding</li>
+        </ul>
+
+        <h3>General Printing</h3>
+        <ul>
+          <li>Flyers, posters & banners</li>
+          <li>Business cards & letterheads</li>
+          <li>Company profiles & brochures</li>
+        </ul>
+      </section>
+
+      <img src="./images/chat-3d.jpg" style="max-width: 100%;" />
+      <br>
+      <img src="./images/modern-flowing.jpg" style="max-width: 90vw;position: absolute;
     z-index: -1;
     opacity: 0.5;" />
 
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>Let’s create something amazing together!</p>
-      <p><strong>Office Address:</strong> 29, Shipeolu street Onipanu, Lagos.</p>
-      <p><strong>Phone:</strong> +2348033477477</p>
-      <p><strong>Email:</strong> [--]</p>
-      <p><strong>Socials:</strong> Facebook | Instagram | Twitter</p>
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Let’s create something amazing together!</p>
+        <p><strong>Office Address:</strong> 29, Shipeolu street Onipanu, Lagos.</p>
+        <p><strong>Phone:</strong> +2348033477477</p>
+        <p><strong>Email:</strong> [--]</p>
+        <p><strong>Socials:</strong> Facebook | Instagram | Twitter</p>
 
-      <div class="cta">
-        <p><strong>Need a quote?</strong> Call us now or send a message!</p>
-      </div>
-    </section>
+        <div class="cta">
+          <p><strong>Need a quote?</strong> Call us now or send a message!</p>
+        </div>
+      </section>
 
-  </div>
 
-  <footer>
-    <p>&copy; 2025 Crystal Animation. All rights reserved.</p>
-  </footer>
+    <footer>
+      <p>&copy; 2025 Crystal Animation. All rights reserved.</p>
+    </footer>
 
-  <script type="text/javascript">
-    window.onload= function (){
-//var im = document.getElementsByClassName('ww')[0].offset
-document.getElementById('sleed').style.width=(3600)+'px';
+    <script type="text/javascript">
+      window.onload = function () {
+        //var im = document.getElementsByClassName('ww')[0].offset
+        document.getElementById('sleed').style.width = (3600) + 'px';
 
-ReachedMaxScroll=0;
-function myFunction() {
-  var DivElmnt = document.getElementById("myDIV");
-  var element = document.getElementById("myDIV");
-  /*
-  console.log('work');
-  var element = document.getElementById("myDIV");
-  element.scrollLeft += 2;
-	*/
-	if (!ReachedMaxScroll) {
-    /*
-		DivElmnt.scrollTop = PreviousScrollTop;
-		PreviousScrollTop++;
-    */
-		element.scrollLeft += 2;
+        ReachedMaxScroll = 0;
+        function myFunction() {
+          var DivElmnt = document.getElementById("myDIV");
+          var element = document.getElementById("myDIV");
+          /*
+          console.log('work');
+          var element = document.getElementById("myDIV");
+          element.scrollLeft += 2;
+          */
+          if (!ReachedMaxScroll) {
+            /*
+            DivElmnt.scrollTop = PreviousScrollTop;
+            PreviousScrollTop++;
+            */
+            element.scrollLeft += 2;
 
-		ReachedMaxScroll = DivElmnt.scrollLeft >= (DivElmnt.scrollWidth - DivElmnt.offsetWidth);
-	}
-	else {
-		ReachedMaxScroll = (DivElmnt.scrollLeft == 0)?false:true;
-		/*
-		DivElmnt.scrollTop = PreviousScrollTop;
-		PreviousScrollTop--;
-    */
-    element.scrollLeft -= 2;
-	}
-  //element.scrollTop += 10;
-}
-var myVar = setInterval(myFunction,50);
-}
-  </script>
+            ReachedMaxScroll = DivElmnt.scrollLeft >= (DivElmnt.scrollWidth - DivElmnt.offsetWidth);
+          }
+          else {
+            ReachedMaxScroll = (DivElmnt.scrollLeft == 0) ? false : true;
+            /*
+            DivElmnt.scrollTop = PreviousScrollTop;
+            PreviousScrollTop--;
+            */
+            element.scrollLeft -= 2;
+          }
+          //element.scrollTop += 10;
+        }
+        var myVar = setInterval(myFunction, 50);
+      }
+    </script>
 </body>
+
 </html>
