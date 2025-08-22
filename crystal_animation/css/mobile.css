@@ -261,12 +261,11 @@ css code for Pop Out Menu
   }
   /* @end of Pop Out Menu*/
   .slidis{
-    display: none;
-  }
-  .slidis_m{
-    display: none;
+    display: none; 
     position: absolute;
     width: 100%;
+    height: 300px;
+    overflow: hidden;
     background-color: #FFF;
   }
   #banner_for_mobile{

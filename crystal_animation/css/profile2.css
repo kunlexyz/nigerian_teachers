@@ -25,14 +25,6 @@ body{
     margin: 20px auto;
 }
 
-.heading_topic {
-    border-left: solid 6px #99f;
-    background: #eef;
-    padding: 10px;
-    padding-left: 40px;
-    font-family: myFont;
-    color:blue;
-}
 .about_story p {
     font-family: myFont;
     font-size: 22px;
@@ -42,11 +34,6 @@ body{
     display:list-item;
     color: #000;
     margin: 25px 0
-}
-.about_story li:hover{
-    background: #fff;
-    color: #000;
-    border-bottom: #aaa solid 2px;
 }
 .about_img, .about_img_2, .about_img_3{
     float:right;
@@ -187,10 +174,6 @@ body{
 #parent:hover #menu_02{
     height: 218px;
 }
-.video_block{
-    display: inline-table;
-    width:100%;
-}
 
 .box1{
 	border-bottom:solid #FFF 2px;
@@ -202,25 +185,12 @@ body{
 .box1x{
 	color: #fff;
 }
-.box2{
-	width: 300px;
-	height: 400px;
-	background-color: #FFF;
-	box-shadow:1px 10px 10px #222;
-	display: inline-block;
-	margin: 6px;
-	padding: 10px;
-	vertical-align: top;
-    background: rgba(255,255,255, 0.8);
-	font-size:20px;
-}
 .box3{
 	color:#F90;
 }
 ul{
 	list-style:square;
 }
-li{color:#000;}
 .box4{
 	text-align: left;
 	font-size:20px;
@@ -235,29 +205,14 @@ li{color:#000;}
     padding-bottom: 100px;
     text-align:center;
 }
-a, a:visited{
-	text-decoration: none;
-	color: #000;
-}
 
 /* footer */
-.footer_heading {
-    font-size: 45px;
-    color: #e8f706;
-    margin-bottom: 25px;
-}
 .bull {
     padding: 4px;
     background-color: #F60;
     display: inline-block;
     vertical-align: middle;
     margin-right: 10px;
-}
-.half_div {
-    width: 30%;
-    min-width: 200px;
-    display: inline-block;
-    vertical-align: top;
 }
 .half_div a{color: #fff;}
 .fooot .half_div, #ratolf_footer  .half_div {
@@ -267,15 +222,99 @@ a, a:visited{
     width: 20px;
     vertical-align: middle;
 }
-@media only screen and (min-width: 481px) and (max-width: 950px){
-    .desktop, .mobile {
+
+.heading_topic {
+    padding: 10px;
+    font-family: myFont;
+    color:blue;
+    font-size: 20px;
+    background: #ff0;
+    border-left: solid 6px rgb(241, 11, 195);
+    font-weight: 700;
+    text-align: left;
+}
+@media only screen and (max-width: 480px){
+    .heading_topic_container{
+        display: block;
+    }
+    .heading_topic {
+        padding-left: 22px;
+    }
+    .video_card{
+        margin: auto;
+    }
+    .video_block{
+        margin: 25px auto;
+        text-align: justify;
+    }
+    .ifr{
+        width: 100vh;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 950px){  
+    .mobile {
         display: none;
+    }
+    
+    #about{top:190px;}
+    .mind_big {
+        max-width: 700px;
+        margin: 20px auto;
+    }
+    #major_con {
+        padding: 30px 15px;
+        max-width: 700px;
+        margin: auto;
     }
 }
 @media only screen and (min-width: 951px){
         
-    .mobile, #myNav, .overlay2, .tab, .mobile_tab {
+    .mobile, #myNav, .overlay2, .tab, .mobile_tab, #mobile_tab {
         display: none;
+    }
+    .box2{
+        width: 300px;
+        height: 400px;
+        background-color: #FFF;
+        box-shadow:1px 10px 10px #222;
+        display: inline-block;
+        margin: 6px;
+        padding: 10px;
+        vertical-align: top;
+        background: rgba(255,255,255, 0.8);
+        font-size:20px;
+    }
+    .half_div {
+        width: 30%;
+        min-width: 200px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .heading_topic_container{
+        display: inline-block;width:63%;
+    }
+    .heading_topic {
+        padding-left: 40px;
+    }
+    .video_card{
+        width: 33%;
+        float: left;
+        margin-right: 25px;
+    }
+    .video_block{
+        display: inline-table;
+        width:100%;
+        font-family: myFont;
+        font-size: 22px;
+        text-align: justify;
+        margin: 30px auto;
+    }
+    .each_video{
+        width: 910px;
+    }
+    .ifr{
+        width:900px; 
+        height:450px;
     }
 }
 /*
@@ -286,7 +325,7 @@ NEW SENIOR SCHOOL BIOLOGY PRACTICAL ACTIVITY/WORKBOOK 1,2 AND 3
 /* for picture carousel */
 .hero{
 	width:100%;
-	height: 457px;
+	height: 400px;
 	overflow: hidden;
 }
 .hero .carousel{
@@ -304,32 +343,21 @@ NEW SENIOR SCHOOL BIOLOGY PRACTICAL ACTIVITY/WORKBOOK 1,2 AND 3
     max-width: 420px;
     max-height: 280px;
 }
-
-
-@media only screen and (min-width: 481px) and (max-width: 950px){  
-    
-    #about{top:190px;}
-    .mind_big {
-        max-width: 700px;
-        margin: 20px auto;
-    }
-    #major_con {
-        padding: 30px 15px;
-        max-width: 700px;
-        margin: auto;
-    }
-}
-@media only screen and (min-width: 951px){
-
-}
+/*--------*/
 
 .each_video{
     background: #000;
     margin: 10px auto;
-    width: 910px;
     min-height: 450px;
     text-align: center;
+    display: none;
 }
 .video_title{
     color: #fff;font-size: 22px;padding-top: 10px;display: inline-block;
+}
+.video_card{
+    height: 185px;
+    background: #fff;
+    text-align: center;
+    box-shadow: 2px 0px 8px rgb(241, 11, 195);
 }

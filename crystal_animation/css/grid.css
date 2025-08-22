@@ -1,0 +1,131 @@
+.big_container {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.grid_con {
+  display: grid;
+}
+
+.grid_2_3 {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+.grid_1_1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr))
+}
+
+.grid img {
+  max-width: 100%;
+}
+
+.grid_1_2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.txt {
+  text-align: justify;
+}
+
+.txt_con {
+  background-size: cover;
+  padding: 40px;
+}
+
+.le {
+  text-align: left;
+}
+
+.grey_box ul {
+  margin-left: 25px;
+}
+
+.grey_box li {
+  font-size: 24px;
+  color: orange;
+}
+
+.grey_inn,
+.grey_box a {
+  color: white;
+  font-size: 18px;
+}
+
+.nav_away li {
+  display: inline-block;
+  margin: 3px;
+  color: white;
+  padding: 10px;
+  font-size: small;
+}
+
+.nav_away a {
+  color: #fff;
+}
+
+@media only screen and (min-width: 481px) {
+
+  .mobile {
+    display: none;
+  }
+  
+  .that_img {
+    width: 400px;
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 900px) {
+
+  .grid_1_2 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .grid_2_3 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .manage .rounded_card {
+    height: 370px;
+  }
+
+  .manage_this .rounded_card {
+    height: 250px;
+  }
+  .manage_another .rounded_card  {
+    height: 320px;
+  }
+
+  .that_img {
+    margin: auto;
+  }
+  .take_space{
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+@media only screen and (min-width: 901px) {
+  .manage .rounded_card {
+    height: 270px;
+  }
+  .manage_2 .rounded_card {
+    height: 200px;
+  }
+  .manage_3 .rounded_card {
+    height: 300px;
+  }
+
+  .manage_this .rounded_card {
+    height: 200px;
+  }
+  .manage_another .rounded_card  {
+    height: 200px;
+  }
+}
